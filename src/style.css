@@ -15,7 +15,7 @@
 
 @layer base {
 	* {
-		@apply m-0 p-0 box-border border-[0px] border-red-500 font-poppins text-neutral-800 text-base
+		@apply m-0 p-0 box-border border-[1px] border-red-500 font-poppins text-neutral-800 text-base
 	}
 	
 	body {
@@ -74,6 +74,10 @@
 	
 	.nav-link-mobile {
 		@apply text-neutral-800 mb-8
+	}
+	
+	.nav-link-desktop {
+		@apply text-neutral-800 ml-8 text-xs xl:text-base
 	}
 	
 	.titulo-section {
