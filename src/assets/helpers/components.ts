@@ -61,7 +61,7 @@ export const projetoContainer = (cod: string): HTMLDivElement => {
 			for (let index = 0; index < element.imgs; index++) {
 				listaImgs.innerHTML +=
 					`<figure class="border border-neutral-200 transition duration-100 brightness-50 hover:brightness-100">
-						<img class="" src="../img/projetos/${element.cod}/${index + 1}.jpg" alt="" />
+						<img class="w-full aspect-auto" src="../img/projetos/${element.cod}/${index + 1}.jpg" alt="" />
 					</figure>`
 			}
 			
@@ -71,9 +71,9 @@ export const projetoContainer = (cod: string): HTMLDivElement => {
 						<iconify-icon class="text-2xl cursor-pointer" icon="tabler:x"></iconify-icon>
 					</span>
 				</div>
-				<div class="container h-dvh overflow-y-scroll invisible-scrollbar">
-					<span class="flex-col">
-						<h2 class="">${element.nome}</h2>
+				<div class="container h-dvh overflow-y-scroll invisible-scrollbar lg:grid-cols-5 lg:gap-8 lg:overflow-hidden">
+					<span class="flex-col lg:col-span-2 lg:overflow-y-scroll lg:pr-4">
+						<h2 class="lg:text-3xl">${element.nome}</h2>
 						<h5 class="mb-8 text-orange-500">${element.data}</h5>
 						<p class="mb-4">${element.descr_compl}</p>
 						<p class="mt-4 mb-2 font-semibold">Tecnologias utilizadas:</p>
@@ -84,8 +84,10 @@ export const projetoContainer = (cod: string): HTMLDivElement => {
 							${btnLinks.innerHTML}
 						</span>
 					</span>
-					<div class="grid gap-8">
-						${listaImgs.innerHTML}
+					<div class="lg:h-full lg:overflow-y-scroll lg:col-span-3 ">
+						<span class="grid gap-8">
+							${listaImgs.innerHTML}
+						</span>
 					</div>
 					<hr class="mt-20" />
 				</div>`
