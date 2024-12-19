@@ -23,7 +23,7 @@
 	}
 	
 	section {
-		@apply w-full flex-col py-12 scroll-smooth
+		@apply w-full flex-col py-12 scroll-smooth xl:py-20
 	}
 	
 	section, figure, span {
@@ -61,7 +61,7 @@
 
 @layer components {
 	.container {
-		@apply grid gap-4 py-8 w-5/6 mx-auto 2xl:w-9/12
+		@apply grid gap-4 py-8 w-5/6 mx-auto xl:w-8/12 2xl:w-6/12
 	}
 	
 	.container-full {
@@ -81,7 +81,7 @@
 	}
 	
 	.titulo-section {
-		@apply flex w-5/6 mx-auto p-0 mb-4 items-center 2xl:w-9/12
+		@apply flex w-5/6 mx-auto p-0 mb-4 items-center xl:w-8/12 2xl:w-6/12
 	}
 	
 	.titulo-section iconify-icon {
