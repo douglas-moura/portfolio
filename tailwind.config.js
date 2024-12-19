@@ -9,6 +9,7 @@ module.exports = {
         extend: {
         	backgroundImage: {
         		'foto-perfil': "url('/src/assets/img/foto-perfil.jpg')",
+        		'circulos': "url('/src/assets/img/background-circulos.png')",
         	}
         },
         fontFamily: {
