@@ -21,6 +21,14 @@
 	body {
 		@apply bg-neutral-100 dark:bg-black bg-circulos bg-cover bg-center bg-no-repeat bg-fixed
 	}
+
+	header {
+		@apply fixed w-full bg-neutral-100 backdrop-blur-sm z-40
+	}
+
+	nav {
+		@apply container grid-cols-2 items-center py-4 lg:py-0 lg:items-start
+	}
 	
 	section {
 		@apply w-full flex-col py-12 scroll-smooth xl:py-16
