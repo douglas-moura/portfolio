@@ -13,10 +13,11 @@ export const boxHabilidade = (data: Habilidade): HTMLSpanElement => {
 export const boxProjeto = (data: Projeto): HTMLSpanElement => {
 	const box = document.createElement('span')
 	box.classList.add('box-projeto')
+	box.classList.add('group')
 	box.setAttribute('id', data.cod)
 	
 	box.innerHTML =
-		`<h3 class="mb-0 text-orange-500">${data.nome}</h3>
+		`<h3 class="mb-0 text-orange-500 duration-200 group-hover:-mt-1 group-hover:mb-1">${data.nome}</h3>
 		<h5 class="">${data.descr_breve}</h5>`
 	
 	const boxIcones = document.createElement('span')
@@ -89,7 +90,7 @@ export const projetoContainer = (cod: string): HTMLDivElement => {
 							${listaImgs.innerHTML}
 						</span>
 					</div>
-					<hr class="mt-20" />
+					<hr class="mt-20 opacity-0" />
 				</div>`
 		}
 	})
