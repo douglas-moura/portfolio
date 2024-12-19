@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./style.css" type="text/css" media="all" />
+		<title></title>
+	<script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+	<body>
+		<header class="fixed w-full bg-neutral-100 z-40">
+			<nav class="container grid-cols-2 items-center py-4">
+				<h5 class="">Douglas Moura</h5>
+				<span class="justify-end">
+					<iconify-icon id="btn-abrir-menu" icon="tabler:menu-2" class="text-3xl right-0"></iconify-icon>
+				</span>
+				<div id="menu-mobile" class="container-full transition-all duration-700 delay-100 ease-in-out translate-x-full">
+					<div class="container">
+						<span>
+							<iconify-icon id="btn-fechar-menu" icon="tabler:x" class="flex text-3xl text-orange-500"></iconify-icon>
+						</span>
+						<span class="mt-12 flex-col">
+							<a class="nav-link-mobile" href="/#sessao-intro">Inicio</a>
+							<a class="nav-link-mobile" href="/#sessao-habilidades">Habilidades</a>
+							<a class="nav-link-mobile" href="/#sessao-projetos">Projetos</a>
+							<a class="nav-link-mobile" href="/#sessao-contato">Contato</a>
+						</span>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section id="sessao-intro" class="scroll-mt-8">
+				<div class="container text-center">
+					<span class="flex-col bg-foto-perfi">
+						<figure class="relative mb-8 overflow-visible justify-center">
+							<div class="circulo"></div>
+							<img class="w-36 aspect-square bg-neutral-500 rounded-full" src="./assets/img/foto-perfil.jpg" alt="" id="img-perfil" />
+						</figure>
+						<h1 class="mb-4">Douglas Moura</h1>
+						<h5 class="">Desenvolver Web Front-End & Designer UI/UX</h5>
+					</span>
+					<p class="mt-4">Sou um desenvolvedor web front-end, trabalho há mais de 8 anos com tecnologia, atualmente estudo o JS framework Vue.Js 3. </p>
+					<span class="grid grid-cols-2 gap-2 mt-6 w-5/6 mx-auto">
+						<a class="btn border border-orange-300 text-orange-400 text-xs" type="">BeHance</a>
+						<a class="btn border border-orange-300 text-orange-400 text-xs" type="">GitHub</a>
+					</span>
+				</div>
+			</section>
+			<section id="sessao-habilidades" class="scroll-mt-8">
+				<h2 class="titulo-section">
+					<iconify-icon icon="tabler:stars"></iconify-icon>Minhas Habilidades
+				</h2>
+				<div class="container">
+					<div class="">
+						<h3 class="">Front-End</h3>
+						<hr class="traco-subtitulo" />
+						<div id="bloco-habilidades-front" class="grid-habilodades">
+							<!-- Habilidades renderizadas aqui com TS -->
+						</div>
+					</div>
+					<div class="">
+						<h3 class="">Designer</h3>
+						<hr class="traco-subtitulo" />
+						<div id="bloco-habilidades-design" class="grid-habilodades">
+							<!-- Habilidades renderizadas aqui com TS -->
+						</div>
+					</div>
+					<div class="">
+						<h3 class="">Outros conhecimentos</h3>
+						<hr class="traco-subtitulo" />
+						<div id="bloco-habilidades-outro" class="grid-habilodades">
+							<!-- Habilidades renderizadas aqui com TS -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="sessao-projetos" class="scroll-mt-8">
+				<h2 class="titulo-section">
+					<iconify-icon icon="tabler:blocks"></iconify-icon>Projetos
+				</h2>
+				<div id="bloco-projetos" class="container">
+					<!-- Projetos renderizados aqui com TS -->
+				</div>
+			</section>
+			<section id="sessao-contato" class="scroll-mt-8">
+				<h2 class="titulo-section">
+					<iconify-icon icon="tabler:message"></iconify-icon>Contato
+				</h2>
+				<div class="container">
+					<span class="items-center">
+						<iconify-icon icon="tabler:brand-github-filled" class="icone-contato"></iconify-icon>
+						<p class="texto-contato">douglas-moura</p>
+					</span>
+					<span class="items-center">
+						<iconify-icon icon="tabler:brand-linkedin-filled" class="icone-contato"></iconify-icon>
+						<p class="texto-contato">in/douglas-moura2204</p>
+					</span>
+					<span class="items-center">
+						<iconify-icon icon="tabler:brand-instagram-filled" class="icone-contato"></iconify-icon>
+						<p class="texto-contato">@doug_moura</p>
+					</span>
+					<span class="items-center">
+						<iconify-icon icon="tabler:mail-filled" class="icone-contato"></iconify-icon>
+						<p class="texto-contato">douglas12345.dsm@gmail.com</p>
+					</span>
+					<span class="items-center">
+						<iconify-icon icon="tabler:brand-whatsapp-filled" class="icone-contato"></iconify-icon>
+						<p class="texto-contato">+55 11 95305-5285</p>
+					</span>
+				</div>
+			</section>
+		</main>
+		<footer class="">
+			<section id="rodape">
+				<div class="container text-center">
+					<h5 class="">Criado e desenvolvido por Douglas Moura &copy; 2024</h5>
+				</div>
+			</section>
+		</footer>
+		<script src="https://code.iconify.design/iconify-icon/2.2.0/iconify-icon.min.js"></script>
+		<script src="./index.ts" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
