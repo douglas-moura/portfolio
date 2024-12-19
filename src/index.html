@@ -36,19 +36,21 @@
 		</header>
 		<main>
 			<section id="sessao-intro" class="scroll-mt-8">
-				<div class="container text-center">
+				<div class="container text-center lg:grid-cols-3 lg:text-left">
 					<span class="flex-col bg-foto-perfi">
-						<figure class="relative mb-8 overflow-visible justify-center">
+						<figure class="relative overflow-visible justify-center">
 							<div class="circulo"></div>
-							<img class="w-36 aspect-square bg-neutral-500 rounded-full" src="./img/foto-perfil.jpg" alt="" id="img-perfil" />
+							<img class="w-36 aspect-square bg-neutral-500 rounded-full lg:w-5/6" src="./img/foto-perfil.jpg" alt="" id="img-perfil" />
 						</figure>
-						<h1 class="mb-4">Douglas Moura</h1>
-						<h5 class="">Desenvolver Web Front-End & Designer UI/UX</h5>
 					</span>
-					<p class="mt-4">Sou um desenvolvedor web front-end, trabalho há mais de 8 anos com tecnologia, atualmente estudo o JS framework Vue.Js 3. </p>
-					<span class="grid grid-cols-2 gap-2 mt-6 w-5/6 mx-auto">
-						<a class="btn btn-secundario" type="">BeHance</a>
-						<a class="btn btn-secundario" type="">GitHub</a>
+					<span class="flex-col m-0 lg:col-span-2">
+						<h1 class="mb-4">Douglas Moura</h1>
+						<h5 class="mb-8">Desenvolver Web Front-End & Designer UI/UX</h5>
+						<p class="">Sou um desenvolvedor web front-end, trabalho há mais de 8 anos com tecnologia, atualmente estudo o JS framework Vue.Js 3. </p>
+						<span class="grid grid-cols-2 gap-2 mt-6 w-5/6 mx-auto lg:w-4/6">
+							<a class="btn btn-secundario" type="">BeHance</a>
+							<a class="btn btn-secundario" type="">GitHub</a>
+						</span>
 					</span>
 				</div>
 			</section>
@@ -56,7 +58,7 @@
 				<h2 class="titulo-section">
 					<iconify-icon icon="tabler:stars"></iconify-icon>Minhas Habilidades
 				</h2>
-				<div class="container">
+				<div class="container lg:grid-cols-3 lg:gap-8">
 					<div class="">
 						<h3 class="">Front-End</h3>
 						<hr class="traco-subtitulo" />
@@ -82,39 +84,39 @@
 			</section>
 			<section id="sessao-projetos" class="scroll-mt-8">
 				<h2 class="titulo-section">
-					<iconify-icon icon="tabler:blocks"></iconify-icon>Projetos
+					<iconify-icon icon="tabler:blocks"></iconify-icon>Meus Projetos
 				</h2>
-				<div id="bloco-projetos" class="container">
+				<div id="bloco-projetos" class="container lg:grid-cols-3">
 					<!-- Projetos renderizados aqui com TS -->
 				</div>
 			</section>
 			<section id="sessao-contato" class="scroll-mt-8">
 				<h2 class="titulo-section">
-					<iconify-icon icon="tabler:message"></iconify-icon>Contato
+					<iconify-icon icon="tabler:message"></iconify-icon>Fale comigo
 				</h2>
-				<div class="container">
-					<span class="items-center">
-						<iconify-icon icon="tabler:brand-github-filled" class="icone-contato"></iconify-icon>
+				<div class="container grid-cols-6">
+					<span class="items-center cursor-pointer group lg:flex-col">
+						<iconify-icon icon="tabler:brand-github-filled" class="icone-contato group-hover:text-neutral-400"></iconify-icon>
 						<p class="texto-contato">douglas-moura</p>
 					</span>
-					<span class="items-center">
-						<iconify-icon icon="tabler:brand-behance" class="icone-contato"></iconify-icon>
+					<span class="items-center cursor-pointer group lg:flex-col">
+						<iconify-icon icon="tabler:brand-behance" class="icone-contato group-hover:text-[#1666F7]"></iconify-icon>
 						<p class="texto-contato">douglasmoura</p>
 					</span>
-					<span class="items-center">
-						<iconify-icon icon="tabler:brand-linkedin-filled" class="icone-contato"></iconify-icon>
+					<span class="items-center cursor-pointer group lg:flex-col">
+						<iconify-icon icon="tabler:brand-linkedin-filled" class="icone-contato group-hover:text-[#0270AD]"></iconify-icon>
 						<p class="texto-contato">in/douglas-moura2204</p>
 					</span>
-					<span class="items-center">
-						<iconify-icon icon="tabler:brand-instagram-filled" class="icone-contato"></iconify-icon>
+					<span class="items-center cursor-pointer group lg:flex-col">
+						<iconify-icon icon="tabler:brand-instagram-filled" class="icone-contato group-hover:text-[#F6249B]"></iconify-icon>
 						<p class="texto-contato">@doug_moura</p>
 					</span>
-					<span class="items-center">
-						<iconify-icon icon="tabler:mail-filled" class="icone-contato"></iconify-icon>
+					<span class="items-center cursor-pointer group lg:flex-col">
+						<iconify-icon icon="tabler:mail-filled" class="icone-contato group-hover:text-[#E34133]"></iconify-icon>
 						<p class="texto-contato">douglas12345.dsm@gmail.com</p>
 					</span>
-					<span class="items-center">
-						<iconify-icon icon="tabler:brand-whatsapp-filled" class="icone-contato"></iconify-icon>
+					<span class="items-center cursor-pointer group lg:flex-col">
+						<iconify-icon icon="tabler:brand-whatsapp-filled" class="icone-contato group-hover:text-[#43DA57]"></iconify-icon>
 						<p class="texto-contato">+55 11 95305-5285</p>
 					</span>
 				</div>

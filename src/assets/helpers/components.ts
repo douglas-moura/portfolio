@@ -16,7 +16,7 @@ export const boxProjeto = (data: Projeto): HTMLSpanElement => {
 	box.setAttribute('id', data.cod)
 	
 	box.innerHTML =
-		`<h4 class="mb-0 text-orange-500">${data.nome}</h4>
+		`<h3 class="mb-0 text-orange-500">${data.nome}</h3>
 		<h5 class="">${data.descr_breve}</h5>`
 	
 	const boxIcones = document.createElement('span')

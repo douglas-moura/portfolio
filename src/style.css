@@ -15,7 +15,7 @@
 
 @layer base {
 	* {
-		@apply m-0 p-0 box-border border-[1px] border-red-500 font-poppins text-neutral-800 text-base
+		@apply m-0 p-0 box-border border-[0px] border-red-500 font-poppins text-neutral-800 text-base
 	}
 	
 	body {
@@ -31,11 +31,11 @@
 	}
 	
 	h1 {
-		@apply text-3xl font-extrabold
+		@apply text-3xl font-extrabold lg:text-5xl
 	}
 	
 	h2 {
-		@apply text-2xl font-extrabold
+		@apply text-2xl font-extrabold lg:text-4xl
 	}
 	
 	h3 {
@@ -43,11 +43,11 @@
 	}
 	
 	h4 {
-		@apply text-base
+		@apply text-base lg:text-lg
 	}
 	
 	h5 {
-		@apply text-xs text-neutral-600 xl:text-base
+		@apply text-xs text-neutral-600 lg:text-sm
 	}
 	
 	p {
@@ -61,7 +61,7 @@
 
 @layer components {
 	.container {
-		@apply grid gap-4 py-8 w-5/6 mx-auto 2xl:w-4/6
+		@apply grid gap-4 py-8 w-5/6 mx-auto 2xl:w-9/12
 	}
 	
 	.container-full {
@@ -81,7 +81,7 @@
 	}
 	
 	.titulo-section {
-		@apply flex w-5/6 mx-auto p-0 mb-4 items-center 2xl:w-4/6
+		@apply flex w-5/6 mx-auto p-0 mb-4 items-center 2xl:w-9/12
 	}
 	
 	.titulo-section iconify-icon {
@@ -89,7 +89,7 @@
 	}
 	
 	.traco-subtitulo {
-		@apply w-1/12 border-2 border-orange-500
+		@apply w-1/12 border-2 border-orange-500 lg:border-4 lg:mt-1 lg:w-2/12
 	}
 	
 	.btn {
@@ -113,7 +113,7 @@
 	}
 	
 	.grid-habilodades {
-		@apply container w-full grid-cols-3
+		@apply container w-full grid-cols-3 lg:gap-2
 	}
 	
 	.box-habilidade {
@@ -121,11 +121,11 @@
 	}
 	
 	.box-habilidade iconify-icon {
-		@apply text-4xl mb-4
+		@apply text-4xl mb-4 lg:text-3xl lg:mb-2
 	}
 	
 	.box-habilidade p {
-		@apply text-xs
+		@apply text-xs lg:text-[10px]
 	}
 	
 	.box-projeto {
@@ -141,15 +141,15 @@
 	}
 	
 	.icone-contato {
-		@apply text-xl rounded-full aspect-square flex items-center justify-center mr-4
+		@apply text-xl rounded-full aspect-square flex items-center justify-center mr-4 transition lg:m-0 lg:mb-2 lg:text-3xl
 	}
 	
 	.texto-contato {
-		@apply pl-4 border-l border-neutral-400
+		@apply pl-4 border-l border-neutral-400 lg:p-0 lg:border-0 lg:text-[10px] 2xl:text-xs
 	}
 	
 	.circulo {
-		@apply absolute -mt-3 -ml-4 h-full rounded-full aspect-square border-4 border-orange-500
+		@apply absolute -mt-3 -ml-4 h-full rounded-full aspect-square border-4 border-orange-500 lg:-mt-5 lg:-ml-6
 	}
 	
 	#sessao-intro {

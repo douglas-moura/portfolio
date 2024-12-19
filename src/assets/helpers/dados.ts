@@ -84,7 +84,7 @@ export const minhasHabilidades = [
 	{ id: 9, cod: 'psd', nome: 'Adobe Photoshop', icone: 'brand-adobe-photoshop', tipo: 'design' },
 	{ id: 10, cod: 'ill', nome: 'Adobe Illustrator', icone: 'brand-adobe-illustrator', tipo: 'design' },
 	{ id: 11, cod: 'pre', nome: 'Adobe Premiere', icone: 'brand-adobe-premier', tipo: 'design' },
-	{ id: 12, cod: 'uix', nome: 'Conceitos de UI e UX', icone: 'layout-board', tipo: 'design' },
+	{ id: 12, cod: 'uix', nome: 'Conceitos UI/UX', icone: 'layout-board', tipo: 'design' },
 	{ id: 13, cod: 'git', nome: 'Git', icone: 'brand-git', tipo: 'outro' },
 	{ id: 14, cod: 'hub', nome: 'GitHub', icone: 'brand-github', tipo: 'outro' },
 	{ id: 15, cod: 'wss', nome: 'WordPress', icone: 'brand-wordpress', tipo: 'outro' },
