@@ -8,8 +8,8 @@
 	</head>
 	<body class="barra-rolagem">
 		<header class="fixed w-full bg-neutral-100 backdrop-blur-sm z-40">
-			<nav class="container grid-cols-2 items-center py-4">
-				<h5 class="">Douglas Moura</h5>
+			<nav class="container grid-cols-2 items-center py-4 lg:py-0 lg:items-start">
+				<h5 class="lg:my-4 lg:text-base">Douglas Moura</h5>
 				<span class="justify-end lg:hidden">
 					<iconify-icon id="btn-abrir-menu" icon="tabler:menu-2" class="text-3xl right-0 cursor-pointer"></iconify-icon>
 				</span>
@@ -26,11 +26,23 @@
 						</span>
 					</div>
 				</div>
-				<span id="menu-desktop" class="justify-end my-2 hidden lg:flex">
-					<a class="nav-link-desktop" href="/#sessao-intro">Inicio</a>
-					<a class="nav-link-desktop" href="/#sessao-habilidades">Habilidades</a>
-					<a class="nav-link-desktop" href="/#sessao-projetos">Projetos</a>
-					<a class="nav-link-desktop" href="/#sessao-contato">Contato</a>
+				<span id="menu-desktop" class="justify-end my-4 hidden lg:flex">
+					<a class="nav-link-desktop group" href="/#sessao-intro">
+						Inicio
+						<hr class="group-hover:scale-x-100" />
+					</a>
+					<a class="nav-link-desktop group" href="/#sessao-habilidades">
+						Habilidades
+						<hr class="group-hover:scale-x-100" />
+					</a>
+					<a class="nav-link-desktop group" href="/#sessao-projetos">
+						Projetos
+						<hr class="group-hover:scale-x-100" />
+					</a>
+					<a class="nav-link-desktop group" href="/#sessao-contato">
+						Contato
+						<hr class="group-hover:scale-x-100" />
+					</a>
 				</span>
 			</nav>
 		</header>
