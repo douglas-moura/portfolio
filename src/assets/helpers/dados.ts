@@ -1,26 +1,12 @@
 export const meusProjetos = [
 	{
-		cod: 'gtx100',
-		nome: 'GTX100 Incentivos',
-		data: 'Fevereiro de 2022',
-		descr_breve: 'Site Institucional',
-		descr_compl: 'Empresa de marketind de incentivos',
-		tecnologias: [
-			'htm', 'css', 'sss'
-		],
-		imgs: 6,
-		link_site: 'https://google.com',
-		link_git: 'google.com',
-		ativo: true
-	},
-	{
 		cod: 'spwork',
 		nome: 'SPWorking',
 		data: 'Novembro de 2024',
-		descr_breve: 'Site Institucional',
+		descr_breve: 'Site Institucional e Logotipo',
 		descr_compl: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor feugiat mi, ut congue eros semper eget. Donec venenatis volutpat elementum. Suspendisse sed porttitor urna. In hac habitasse platea dictumst. Integer gravida ante et fringilla commodo.<br><br>Fusce vehicula enim at ligula ornare, vel dignissim nisl interdum. Nam eu sem id magna iaculis maximus.',
 		tecnologias: [
-			'htm', 'css', 'tsc', 'tai', 'web', 'jsn'
+			'htm', 'css', 'tsc', 'tai', 'web'
 		],
 		link_site: 'google.com',
 		link_git: 'google.com',
@@ -28,7 +14,21 @@ export const meusProjetos = [
 		ativo: true
 	},
 	{
-		cod: 'agr',
+		cod: 'gtx100',
+		nome: 'GTX100 Incentivos',
+		data: 'Fevereiro de 2022',
+		descr_breve: 'Site Institucional',
+		descr_compl: 'Empresa de marketind de incentivos',
+		tecnologias: [
+			'wss', 'css', 'jsc'
+		],
+		imgs: 6,
+		link_site: 'https://gtx100.com.br/',
+		link_git: false,
+		ativo: true
+	},
+	{
+		cod: 'agro',
 		nome: 'Agro&Solar',
 		data: 'Outubro de 2024',
 		descr_breve: 'Site Institucional e Landing Page',
@@ -57,9 +57,9 @@ export const meusProjetos = [
 	},
 	{
 		cod: 'logocasa',
-		nome: 'Espaço CasaAir',
+		nome: 'CasaAir',
 		data: 'Setembro de 2021',
-		descr_breve: 'Logotipo e Indetidade Visual',
+		descr_breve: 'Logotipo',
 		descr_compl: '',
 		tecnologias: [
 			'ill',
@@ -67,6 +67,20 @@ export const meusProjetos = [
 		link_site: false,
 		link_git: false,
 		imgs: 6,
+		ativo: true
+	},
+	{
+		cod: 'ifth',
+		nome: 'Infinith Tech',
+		data: 'Fevereiro de 2023',
+		descr_breve: 'Site Institucional',
+		descr_compl: 'A Infinity Tech é uma empresa brasileira de consultoria e engenharia especializada em gestão ambiental estratégica e sustentável. Com mais de 10 anos de atuação, oferece soluções inovadoras em gestão de água, economia circular e saneamento, auxiliando empresas a alcançarem eficiência ambiental e lucratividade. <br><br> Participei da reestruturação do site da Infinity Tech, a partir de um layout pré-existente. Desenvolvi e implementei as páginas de sobre, soluções (cases), publicações, equipe e contato, além da versão em inglês, focando na usabilidade, apresentação visual e alinhamento com a identidade da marca.',
+		tecnologias: [
+			'wss', 'css'
+		],
+		link_site: 'https://infinitytech.com.br/',
+		link_git: false,
+		imgs: 8,
 		ativo: true
 	}
 ]
@@ -81,9 +95,9 @@ export const minhasHabilidades = [
 	{ id: 6, cod: 'sss', nome: 'Sass', icone: 'brand-sass', tipo: 'front' },
 	{ id: 7, cod: 'jsn', nome: 'JSON', icone: 'json', tipo: 'front' },
 	{ id: 8, cod: 'npm', nome: 'NPM', icone: 'brand-npm', tipo: 'front' },
-	{ id: 9, cod: 'psd', nome: 'Adobe Photoshop', icone: 'brand-adobe-photoshop', tipo: 'design' },
-	{ id: 10, cod: 'ill', nome: 'Adobe Illustrator', icone: 'brand-adobe-illustrator', tipo: 'design' },
-	{ id: 11, cod: 'pre', nome: 'Adobe Premiere', icone: 'brand-adobe-premier', tipo: 'design' },
+	{ id: 9, cod: 'psd', nome: 'Photoshop', icone: 'brand-adobe-photoshop', tipo: 'design' },
+	{ id: 10, cod: 'ill', nome: 'Illustrator', icone: 'brand-adobe-illustrator', tipo: 'design' },
+	{ id: 11, cod: 'pre', nome: 'Premiere', icone: 'brand-adobe-premier', tipo: 'design' },
 	{ id: 12, cod: 'uix', nome: 'UI e UX', icone: 'layout-board', tipo: 'design' },
 	{ id: 13, cod: 'git', nome: 'Git', icone: 'brand-git', tipo: 'outro' },
 	{ id: 14, cod: 'hub', nome: 'GitHub', icone: 'brand-github', tipo: 'outro' },
