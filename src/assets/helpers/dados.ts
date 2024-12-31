@@ -8,9 +8,9 @@ export const meusProjetos = [
 		tecnologias: [
 			'htm', 'css', 'tsc', 'tai', 'web'
 		],
-		link_site: 'google.com',
-		link_git: 'google.com',
-		imgs: 6,
+		link_site: 'https://douglas-moura.github.io/website___spworking/',
+		link_git: 'https://github.com/douglas-moura/website___spworking/',
+		imgs: 2,
 		ativo: true
 	},
 	{
