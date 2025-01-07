@@ -4,7 +4,7 @@ export const meusProjetos = [
 		nome: 'SPWorking',
 		data: 'Novembro de 2024',
 		descr_breve: 'Site Institucional e Logotipo',
-		descr_compl: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor feugiat mi, ut congue eros semper eget. Donec venenatis volutpat elementum. Suspendisse sed porttitor urna. In hac habitasse platea dictumst. Integer gravida ante et fringilla commodo.<br><br>Fusce vehicula enim at ligula ornare, vel dignissim nisl interdum. Nam eu sem id magna iaculis maximus.',
+		descr_compl: 'O SPWorking é um espaço de coworking localizado em São Paulo, que oferece salas comerciais e estações de trabalho para equipes de 4 a 5 pessoas. <br><br> Este é um projeto fictício de redesign do site oficial do SPWorking que eu havia criado em 2017, criando uma nova versão para explorar conceitos de design e usabilidade. O trabalho incluiu o planejamento de uma interface moderna e funcional. <br><br> O foco foi oferecer uma navegação intuitiva e destacar os serviços e vantagens do coworking, garantindo que o design refletisse a identidade da marca de forma clara e atraente.',
 		tecnologias: [
 			'htm', 'css', 'tsc', 'tai', 'web'
 		],
