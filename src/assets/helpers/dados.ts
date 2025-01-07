@@ -18,7 +18,7 @@ export const meusProjetos = [
 		nome: 'GTX100 Incentivos',
 		data: 'Fevereiro de 2022',
 		descr_breve: 'Site Institucional',
-		descr_compl: 'Empresa de marketind de incentivos',
+		descr_compl: 'A GTX100 é uma empresa especializada em assessoria para aumento de performance, realizando diagnósticos, avaliando indicadores e implementando campanhas de melhorias para equipes comerciais. Oferece soluções focadas em motivar equipes e impulsionar a produtividade das empresas. <br><br> Neste projeto eu reestruturei o site da GTX100 do zero, utilizando WordPress para criar uma plataforma moderna, funcional e alinhada com os objetivos do cliente. O trabalho incluiu o design e implementação de todas as páginas, com foco na usabilidade e em uma navegação intuitiva. <br><br> O site está no ar oficialmente, representando a marca com uma identidade visual renovada e uma experiência otimizada para os usuários.',
 		tecnologias: [
 			'wss', 'css', 'jsc'
 		],
