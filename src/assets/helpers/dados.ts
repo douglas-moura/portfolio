@@ -28,17 +28,59 @@ export const meusProjetos = [
 		ativo: true
 	},
 	{
-		cod: 'agro',
+		cod: 'agroesolar',
 		nome: 'Agro&Solar',
-		data: 'Outubro de 2024',
+		data: 'Agosto de 2024',
 		descr_breve: 'Site Institucional e Landing Page',
 		descr_compl: 'A Agro & Solar é uma empresa brasileira dedicada a integrar soluções inovadoras no agronegócio, combinando a produção agrícola com a geração de energia solar fotovoltaica. <br><br> Seu principal objetivo é enfrentar desafios globais relacionados à produção de alimentos e energia, promovendo o uso compartilhado do solo para essas finalidades. <br><br> A empresa oferece serviços que englobam desde estudos de viabilidade financeira até o projeto, financiamento, instalação e manutenção de sistemas agrivoltaicos, além da comercialização do excedente de energia gerada.',
 		tecnologias: [
 			'htm', 'css', 'tai', 'web'
 		],
-		link_site: 'google.com',
-		link_git: 'google.com',
-		imgs: 3,
+		link_site: 'https://agroesolar.com.br/',
+		link_git: 'https://github.com/douglas-moura/website___agroesolar',
+		imgs: 1,
+		ativo: true
+	},
+	{
+		cod: 'proj-memo',
+		nome: 'Jogo da Memória',
+		data: 'Setembro de 2024',
+		descr_breve: 'Projeto de jogo da memória temático',
+		descr_compl: 'Desenvolvi este jogo da memória como parte dos meus estudos em JavaScript, explorando lógica de programação e manipulação do DOM. <br><br> É um jogo da memória interativo e prático, disponível no GitHub. O jogo foi construído com foco em funcionalidades simples e intuitivas, além de uma interface agradável. Ele permite aos usuários testar suas habilidades de memorização em um ambiente responsivo e funcional.',
+		tecnologias: [
+			'htm', 'css', 'tai', 'jsc'
+		],
+		link_site: false,
+		link_git: 'https://github.com/douglas-moura/projeto___jogo-da-memoria/',
+		imgs: 4,
+		ativo: true
+	},
+	{
+		cod: 'ifth',
+		nome: 'Infinith Tech',
+		data: 'Fevereiro de 2023',
+		descr_breve: 'Site Institucional',
+		descr_compl: 'A Infinity Tech é uma empresa brasileira de consultoria e engenharia especializada em gestão ambiental estratégica e sustentável. Com mais de 10 anos de atuação, oferece soluções inovadoras em gestão de água, economia circular e saneamento, auxiliando empresas a alcançarem eficiência ambiental e lucratividade. <br><br> Participei da reestruturação do site da Infinity Tech, a partir de um layout pré-existente. Desenvolvi e implementei as páginas de sobre, soluções (cases), publicações, equipe e contato, além da versão em inglês, focando na usabilidade, apresentação visual e alinhamento com a identidade da marca.',
+		tecnologias: [
+			'wss', 'css'
+		],
+		link_site: 'https://infinitytech.com.br/',
+		link_git: false,
+		imgs: 8,
+		ativo: true
+	},
+	{
+		cod: 'proj-login',
+		nome: 'Projeto Login Users',
+		data: 'Setembro de 2024',
+		descr_breve: 'Sistema de cadastro, autenticação e login de usuários',
+		descr_compl: 'Desenvolvi este sistema funcional de login e cadastro como parte de meus estudos em desenvolvimento web. <br><br> Para o backend, utilizei o JSON-Server para simular uma API, permitindo a criação e manipulação de usuários de forma prática durante o desenvolvimento. No frontend, implementei o uso do sessionStorage para armazenar temporariamente os dados de sessão do usuário.',
+		tecnologias: [
+			'htm', 'css', 'tai', 'tsc', 'jsn', 'npm'
+		],
+		link_site: false,
+		link_git: 'https://github.com/douglas-moura/projeto___sistema-login-e-cadastro/',
+		imgs: 4,
 		ativo: true
 	},
 	{
@@ -67,20 +109,6 @@ export const meusProjetos = [
 		link_site: false,
 		link_git: false,
 		imgs: 6,
-		ativo: true
-	},
-	{
-		cod: 'ifth',
-		nome: 'Infinith Tech',
-		data: 'Fevereiro de 2023',
-		descr_breve: 'Site Institucional',
-		descr_compl: 'A Infinity Tech é uma empresa brasileira de consultoria e engenharia especializada em gestão ambiental estratégica e sustentável. Com mais de 10 anos de atuação, oferece soluções inovadoras em gestão de água, economia circular e saneamento, auxiliando empresas a alcançarem eficiência ambiental e lucratividade. <br><br> Participei da reestruturação do site da Infinity Tech, a partir de um layout pré-existente. Desenvolvi e implementei as páginas de sobre, soluções (cases), publicações, equipe e contato, além da versão em inglês, focando na usabilidade, apresentação visual e alinhamento com a identidade da marca.',
-		tecnologias: [
-			'wss', 'css'
-		],
-		link_site: 'https://infinitytech.com.br/',
-		link_git: false,
-		imgs: 8,
 		ativo: true
 	}
 ]

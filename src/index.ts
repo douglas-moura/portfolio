@@ -59,6 +59,7 @@ const visualizarProjetos = (cod: string) => {
 	
 	// fechar projeto
 	const fecharProjeto = document.getElementById('fechar-projeto') as HTMLSpanElement
+	
 	fecharProjeto.addEventListener('click', () => {
 		//alert('fechou')
 		container.classList.toggle('translate-y-full')
