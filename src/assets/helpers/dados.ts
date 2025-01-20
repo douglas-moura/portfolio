@@ -3,7 +3,7 @@ export const meusProjetos = [
 		cod: 'spwork',
 		nome: 'SPWorking',
 		data: 'Novembro de 2024',
-		descr_breve: 'Site Institucional e Logotipo',
+		descr_breve: 'Site Institucional',
 		descr_compl: 'O SPWorking é um espaço de coworking localizado em São Paulo, que oferece salas comerciais e estações de trabalho para equipes de 4 a 5 pessoas. <br><br> Este é um projeto fictício de redesign do site oficial do SPWorking que eu havia criado em 2017, criando uma nova versão para explorar conceitos de design e usabilidade. O trabalho incluiu o planejamento de uma interface moderna e funcional. <br><br> O foco foi oferecer uma navegação intuitiva e destacar os serviços e vantagens do coworking, garantindo que o design refletisse a identidade da marca de forma clara e atraente.',
 		tecnologias: [
 			'htm', 'css', 'tsc', 'tai', 'web'
@@ -30,15 +30,15 @@ export const meusProjetos = [
 	{
 		cod: 'agroesolar',
 		nome: 'Agro&Solar',
-		data: 'Agosto de 2024',
+		data: 'Janeiro de 2025',
 		descr_breve: 'Site Institucional e Landing Page',
 		descr_compl: 'A Agro & Solar é uma empresa brasileira dedicada a integrar soluções inovadoras no agronegócio, combinando a produção agrícola com a geração de energia solar fotovoltaica. <br><br> Seu principal objetivo é enfrentar desafios globais relacionados à produção de alimentos e energia, promovendo o uso compartilhado do solo para essas finalidades. <br><br> A empresa oferece serviços que englobam desde estudos de viabilidade financeira até o projeto, financiamento, instalação e manutenção de sistemas agrivoltaicos, além da comercialização do excedente de energia gerada.',
 		tecnologias: [
-			'htm', 'css', 'tai', 'web'
+			'htm', 'css', 'tai', 'web', 'tsc'
 		],
 		link_site: 'https://agroesolar.com.br/',
 		link_git: 'https://github.com/douglas-moura/website___agroesolar',
-		imgs: 1,
+		imgs: 2,
 		ativo: true
 	},
 	{
@@ -81,7 +81,7 @@ export const meusProjetos = [
 		link_site: false,
 		link_git: 'https://github.com/douglas-moura/projeto___sistema-login-e-cadastro/',
 		imgs: 4,
-		ativo: true
+		ativo: false
 	},
 	{
 		cod: 'post',
@@ -95,7 +95,7 @@ export const meusProjetos = [
 		link_site: false,
 		link_git: false,
 		imgs: 10,
-		ativo: true
+		ativo: false
 	},
 	{
 		cod: 'logocasa',
@@ -109,7 +109,7 @@ export const meusProjetos = [
 		link_site: false,
 		link_git: false,
 		imgs: 6,
-		ativo: true
+		ativo: false
 	}
 ]
 
