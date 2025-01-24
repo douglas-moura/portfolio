@@ -70,6 +70,20 @@ export const meusProjetos = [
 		ativo: true
 	},
 	{
+		cod: 'miv-agro',
+		nome: 'Logotipo Agro&Solar',
+		data: 'Novembro de 2024',
+		descr_breve: 'Manual de Identidade Visual',
+		descr_compl: 'Este manual foi desenvolvido para orientar a aplicação correta do logotipo, cores, tipografia e outros elementos que compõem a identidade visual da Agro&Solar. <br><br> Ele serve como uma ferramenta indispensável para designers, equipes internas e parceiros externos que trabalham em projetos da marca, garantindo que a essência da Agro&Solar seja transmitida com clareza e força em todos os materiais.',
+		tecnologias: [
+			'ill', 'psd'
+		],
+		link_site: false,
+		link_git: false,
+		imgs: 14,
+		ativo: true
+	},
+	{
 		cod: 'proj-login',
 		nome: 'Projeto Login Users',
 		data: 'Setembro de 2024',
