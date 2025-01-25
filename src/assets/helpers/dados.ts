@@ -99,7 +99,7 @@ export const meusProjetos = [
 	},
 	{
 		cod: 'proj-login',
-		nome: 'Projeto Login Users',
+		nome: 'Tela de Login',
 		data: 'Setembro de 2024',
 		descr_breve: 'Sistema de cadastro, autenticação e login de usuários',
 		descr_compl: 'Desenvolvi este sistema funcional de login e cadastro como parte de meus estudos em desenvolvimento web. <br><br> Para o backend, utilizei o JSON-Server para simular uma API, permitindo a criação e manipulação de usuários de forma prática durante o desenvolvimento. No frontend, implementei o uso do sessionStorage para armazenar temporariamente os dados de sessão do usuário.',
