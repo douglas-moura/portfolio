@@ -56,6 +56,20 @@ export const meusProjetos = [
 		ativo: true
 	},
 	{
+		cod: 'gtx100-flyer',
+		nome: 'GTX100 Incentivos',
+		data: 'Fevereiro de 2025',
+		descr_breve: 'Flyer Promociaonal',
+		descr_compl: 'Neste projeto, desenvolvi o design de um material publicitário para a GTX100, com o objetivo de destacar o impacto positivo das campanhas de incentivo na produtividade e no crescimento de vendas, lucro bruto e market share de empresas parceiras. <br><br> Trabalhei na criação de um layout moderno e organizado, utilizando elementos visuais atrativos, gráficos e tabelas que reforçam os resultados obtidos. O material foi pensado para comunicar de forma clara e motivadora os benefícios das soluções oferecidas pela GTX100, alinhando eficiência visual com o branding da marca.',
+		tecnologias: [
+			'ill', 'psd'
+		],
+		link_site: false,
+		link_git: false,
+		imgs: 3,
+		ativo: true
+	},
+	{
 		cod: 'ifth',
 		nome: 'Infinith Tech',
 		data: 'Fevereiro de 2023',
@@ -71,7 +85,7 @@ export const meusProjetos = [
 	},
 	{
 		cod: 'miv-agro',
-		nome: 'Logotipo Agro&Solar',
+		nome: 'Agro&Solar',
 		data: 'Novembro de 2024',
 		descr_breve: 'Manual de Identidade Visual',
 		descr_compl: 'Este manual foi desenvolvido para orientar a aplicação correta do logotipo, cores, tipografia e outros elementos que compõem a identidade visual da Agro&Solar. <br><br> Ele serve como uma ferramenta indispensável para designers, equipes internas e parceiros externos que trabalham em projetos da marca, garantindo que a essência da Agro&Solar seja transmitida com clareza e força em todos os materiais.',
