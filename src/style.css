@@ -58,6 +58,10 @@
 		@apply text-xs text-neutral-600
 	}
 	
+	h6 {
+		@apply text-[10px] text-neutral-600
+	}
+	
 	p {
 		@apply text-sm
 	}
@@ -141,7 +145,7 @@
 	}
 	
 	.box-projeto {
-		@apply w-full rounded transition overflow-hidden shadow pt-20 bg-white flex-col p-4 border-b-4 border-orange-500 cursor-pointer
+		@apply w-full rounded-xl transition overflow-hidden shadow pt-32 bg-white flex-col p-8 border-b-0 border-orange-500 cursor-pointer
 	}
 	
 	.box-projeto-icones iconify-icon {
