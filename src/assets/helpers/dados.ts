@@ -8,7 +8,7 @@ export const meusProjetos = [
 		tecnologias: [
 			'ill', 'psd'
 		],
-		link_site: false,
+		link_site: 'https://www.behance.net/gallery/218120275/Logo-Pessoal-Identidade-Visual',
 		link_git: false,
 		imgs: 10,
 		ativo: true
