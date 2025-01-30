@@ -50,7 +50,7 @@ export const projetoContainer = (cod: string): HTMLDivElement => {
 			btnLinks.innerHTML += element.link_site?
 				`<a href="${element.link_site}" target="_blank" class="btn btn-primario">
 					<iconify-icon icon="tabler:world"></iconify-icon>
-					Ver site
+					Ver
 				</a>` : ''
 			btnLinks.innerHTML += element.link_git?
 				`<a href="${element.link_git}" target="_blank" class="btn btn-primario">

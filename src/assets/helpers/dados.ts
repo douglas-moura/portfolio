@@ -1,5 +1,19 @@
 export const meusProjetos = [
 	{
+		cod: 'miv-d',
+		nome: 'Logo Pessoal',
+		data: 'Janeiro de 2025',
+		descr_breve: 'Manual de Identidade Visual',
+		descr_compl: 'Este projeto é um breve manual que reúne as diretrizes do meu ícone pessoal, criado como uma assinatura visual para minhas ilustrações e projetos como designer, mais do que um simples símbolo, ele representa minha identidade criativa e profissional. A identidade foi desenvolvida para refletir dinamismo, criatividade e modernidade, traduzidos por uma paleta de cores vibrante e um ícone distintivo.',
+		tecnologias: [
+			'ill', 'psd'
+		],
+		link_site: false,
+		link_git: false,
+		imgs: 10,
+		ativo: true
+	},
+	{
 		cod: 'spwork',
 		nome: 'SPWorking',
 		data: 'Novembro de 2024',
@@ -92,7 +106,7 @@ export const meusProjetos = [
 		tecnologias: [
 			'ill', 'psd'
 		],
-		link_site: false,
+		link_site: 'https://www.behance.net/gallery/217952013/Agro-Solar-Identidade-Visual',
 		link_git: false,
 		imgs: 14,
 		ativo: true
