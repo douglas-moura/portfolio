@@ -7,9 +7,30 @@
 		<title></title>
 	</head>
 	<body class="barra-rolagem">
-		<header>
-			<nav>
-				<p class="text-xs lg:my-4 xl:text-sm">Douglas Moura</p>
+		<header class="">
+			<nav class="items-center">
+				<span class="items-center lg:my-8">
+					<img src="./img/logo.png" alt="" class="h-8 aspect-square mr-2">
+					<!--<p class="text-[#f45714] text-xs xl:text-sm">Douglas Moura</p>-->
+				</span>
+				<span id="menu-desktop" class="justify-end my-4 gap-2 hidden lg:flex">
+					<a class="nav-link-desktop group" href="/#sessao-intro">
+						<p class="group-hover:text-[#FAFAFA]">Início</p>
+						<div class="group-hover:scale-x-100"></div>
+					</a>
+					<a class="nav-link-desktop group" href="/#sessao-habilidades">
+						<p class="group-hover:text-[#FAFAFA]">Habilidades</p>
+						<div class="group-hover:scale-x-100"></div>
+					</a>
+					<a class="nav-link-desktop group" href="/#sessao-projetos">
+						<p class="group-hover:text-[#FAFAFA]">Projetos</p>
+						<div class="group-hover:scale-x-100"></div>
+					</a>
+					<a class="nav-link-desktop group" href="/#sessao-contato">
+						<p class="group-hover:text-[#FAFAFA]">Contato</p>
+						<div class="group-hover:scale-x-100"></div>
+					</a>
+				</span>
 				<span class="justify-end lg:hidden">
 					<iconify-icon id="btn-abrir-menu" icon="tabler:menu-2" class="text-3xl right-0 cursor-pointer"></iconify-icon>
 				</span>
@@ -26,50 +47,26 @@
 						</span>
 					</div>
 				</div>
-				<span id="menu-desktop" class="justify-end my-4 hidden lg:flex">
-					<a class="nav-link-desktop group" href="/#sessao-intro">
-						Inicio
-						<hr class="group-hover:scale-x-100" />
-					</a>
-					<a class="nav-link-desktop group" href="/#sessao-habilidades">
-						Habilidades
-						<hr class="group-hover:scale-x-100" />
-					</a>
-					<a class="nav-link-desktop group" href="/#sessao-projetos">
-						Projetos
-						<hr class="group-hover:scale-x-100" />
-					</a>
-					<a class="nav-link-desktop group" href="/#sessao-contato">
-						Contato
-						<hr class="group-hover:scale-x-100" />
-					</a>
-				</span>
 			</nav>
 		</header>
 		<main>
 			<section id="sessao-intro" class="scroll-mt-8">
-				<div class="container text-center lg:grid-cols-3 lg:text-left">
-					<span class="flex-col bg-foto-perfi">
-						<figure class="relative overflow-visible justify-center">
-							<div class="circulo"></div>
-							<img class="w-36 aspect-square bg-neutral-500 rounded-full lg:w-5/6 xl:w-4/6" src="./img/foto-perfil.jpg" alt="" id="img-perfil" />
-						</figure>
-					</span>
-					<span class="flex-col m-0 lg:col-span-2">
+				<div class="container container-perfil">
+					<figure class="w-56 mx-auto">
+						<img class="h-full rounded-full" src="./img/foto-perfil.jpg" alt="" id="img-perfil" />
+					</figure>
+					<span class="flex-col my-4">
 						<h1 class="mb-4">Douglas Moura</h1>
-						<h5 class="mb-8">Desenvolver Web Front-End & Designer UI/UX</h5>
-						<p class="">Sou desenvolvedor web e designer gráfico, especializado na criação de sites funcionais e visualmente atrativos. Também trabalho com design gráfico, edição de imagens, vídeos e ilustrações, criando materiais que equilibram criatividade e objetivo.</p>
-						<span class="grid grid-cols-2 gap-2 mt-6 w-5/6 mx-auto lg:w-4/6">
-							<a class="btn btn-secundario" href="https://github.com/douglas-moura" target="_blank">GitHub</a>
-							<a class="btn btn-secundario" href="https://www.behance.net/douglasmoura" target="_blank">BeHance</a>
-						</span>
+						<h4 class="text-[#A1A1A1]">Desenvolver Front-End & Designer Pleno</h4>
+					</span>
+					<span class="mx-auto w-1/2">
+						<a class="btn btn-primario" href="https://github.com/douglas-moura" target="_blank"><iconify-icon icon="tabler:brand-github"></iconify-icon>GitHub</a>
+						<a class="btn btn-secundario" href="https://www.behance.net/douglasmoura" target="_blank"><iconify-icon icon="tabler:brand-behance"></iconify-icon>BeHance</a>
 					</span>
 				</div>
 			</section>
 			<section id="sessao-habilidades" class="scroll-mt-8">
-				<h2 class="titulo-section">
-					<iconify-icon icon="tabler:stars"></iconify-icon>Minhas Habilidades
-				</h2>
+				<h2 class="titulo-section">Minhas Habilidades</h2>
 				<div class="container lg:grid-cols-3 lg:gap-8">
 					<div class="">
 						<h3 class="">Front-End</h3>
