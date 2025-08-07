@@ -11,6 +11,7 @@ export const meusProjetos = [
 		link_site: 'https://www.behance.net/gallery/218120275/Logo-Pessoal-Identidade-Visual',
 		link_git: false,
 		imgs: 10,
+		tipo: 'logo-design',
 		ativo: true
 	},
 	{
@@ -25,6 +26,7 @@ export const meusProjetos = [
 		link_site: 'https://douglas-moura.github.io/website___spworking/',
 		link_git: 'https://github.com/douglas-moura/website___spworking/',
 		imgs: 2,
+		tipo: 'web-design',
 		ativo: true
 	},
 	{
@@ -39,6 +41,7 @@ export const meusProjetos = [
 		imgs: 6,
 		link_site: 'https://gtx100.com.br/',
 		link_git: false,
+		tipo: 'web-design',
 		ativo: true
 	},
 	{
@@ -53,7 +56,8 @@ export const meusProjetos = [
 		link_site: 'https://agroesolar.com.br/',
 		link_git: 'https://github.com/douglas-moura/website___agroesolar',
 		imgs: 2,
-		ativo: true
+		tipo: 'web-design',
+		ativo: false
 	},
 	{
 		cod: 'proj-memo',
@@ -67,6 +71,7 @@ export const meusProjetos = [
 		link_site: false,
 		link_git: 'https://github.com/douglas-moura/projeto___jogo-da-memoria/',
 		imgs: 4,
+		tipo: 'mobile-app',
 		ativo: true
 	},
 	{
@@ -81,6 +86,7 @@ export const meusProjetos = [
 		link_site: false,
 		link_git: false,
 		imgs: 3,
+		tipo: 'design-grafico',
 		ativo: true
 	},
 	{
@@ -95,7 +101,8 @@ export const meusProjetos = [
 		link_site: 'https://infinitytech.com.br/',
 		link_git: false,
 		imgs: 8,
-		ativo: true
+		tipo: 'web-design',
+		ativo: false
 	},
 	{
 		cod: 'miv-agro',
@@ -109,6 +116,7 @@ export const meusProjetos = [
 		link_site: 'https://www.behance.net/gallery/217952013/Agro-Solar-Identidade-Visual',
 		link_git: false,
 		imgs: 14,
+		tipo: 'logo-design',
 		ativo: true
 	},
 	{
@@ -123,6 +131,7 @@ export const meusProjetos = [
 		link_site: false,
 		link_git: 'https://github.com/douglas-moura/projeto___sistema-login-e-cadastro/',
 		imgs: 4,
+		tipo: 'mobile-app',
 		ativo: false
 	},
 	{
@@ -137,6 +146,7 @@ export const meusProjetos = [
 		link_site: false,
 		link_git: false,
 		imgs: 10,
+		tipo: 'design-grafico',
 		ativo: false
 	},
 	{
@@ -151,6 +161,7 @@ export const meusProjetos = [
 		link_site: false,
 		link_git: false,
 		imgs: 6,
+		tipo: 'logo-design',
 		ativo: false
 	}
 ]
@@ -163,18 +174,20 @@ export const minhasHabilidades = [
 	{ id: 4, cod: 'vue', nome: 'Vue.js 3', icone: 'brand-vue', tipo: 'front' },
 	{ id: 5, cod: 'tai', nome: 'TailwindCSS', icone: 'brand-tailwind', tipo: 'front' },
 	{ id: 6, cod: 'sss', nome: 'Sass', icone: 'brand-sass', tipo: 'front' },
-	{ id: 7, cod: 'jsn', nome: 'JSON', icone: 'json', tipo: 'front' },
-	{ id: 8, cod: 'npm', nome: 'NPM', icone: 'brand-npm', tipo: 'front' },
+	/*{ id: 7, cod: 'jsn', nome: 'JSON', icone: 'json', tipo: 'front' },
+	{ id: 8, cod: 'npm', nome: 'NPM', icone: 'brand-npm', tipo: 'front' },*/
 	{ id: 9, cod: 'psd', nome: 'Photoshop', icone: 'brand-adobe-photoshop', tipo: 'design' },
 	{ id: 10, cod: 'ill', nome: 'Illustrator', icone: 'brand-adobe-illustrator', tipo: 'design' },
 	{ id: 11, cod: 'pre', nome: 'Premiere', icone: 'brand-adobe-premier', tipo: 'design' },
-	{ id: 12, cod: 'uix', nome: 'UI e UX', icone: 'layout-board', tipo: 'design' },
-	{ id: 13, cod: 'git', nome: 'Git', icone: 'brand-git', tipo: 'outro' },
-	{ id: 14, cod: 'hub', nome: 'GitHub', icone: 'brand-github', tipo: 'outro' },
-	{ id: 15, cod: 'wss', nome: 'WordPress', icone: 'brand-wordpress', tipo: 'outro' },
-	{ id: 16, cod: 'sql', nome: 'SQL', icone: 'file-type-sql', tipo: 'outro' },
-	{ id: 17, cod: 'php', nome: 'PHP', icone: 'brand-php', tipo: 'outro' },
-	{ id: 17, cod: 'web', nome: 'Webpack', icone: 'package', tipo: 'outro' },
+	{ id: 12, cod: 'rea', nome: 'React Native', icone: 'brand-react-native', tipo: 'mobi' },
+	{ id: 13, cod: 'exp', nome: 'Expo e EAS', icone: 'device-mobile-code', tipo: 'mobi' },
+	{ id: 14, cod: 'uix', nome: 'UI e UX', icone: 'layout-board', tipo: 'mobi' },
+	{ id: 15, cod: 'git', nome: 'Git', icone: 'brand-git', tipo: 'outro' },
+	{ id: 16, cod: 'hub', nome: 'GitHub', icone: 'brand-github', tipo: 'outro' },
+	{ id: 17, cod: 'wss', nome: 'WordPress', icone: 'brand-wordpress', tipo: 'outro' },
+	{ id: 18, cod: 'php', nome: 'PHP', icone: 'brand-php', tipo: 'outro' },
+	{ id: 19, cod: 'sql', nome: 'SQL', icone: 'database', tipo: 'outro' },
+	{ id: 19, cod: 'ofc', nome: 'Pacote Office', icone: 'brand-office', tipo: 'outro' },
 ]
 
 export const getHabilidade = (cod: string, dado: string): string | number => {

@@ -51,83 +51,94 @@
 		</header>
 		<main>
 			<section id="sessao-intro" class="scroll-mt-8">
-				<div class="container container-perfil">
+				<div class="container z-20 container-perfil">
 					<figure class="w-56 mx-auto">
 						<img class="h-full rounded-full" src="./img/foto-perfil.jpg" alt="" id="img-perfil" />
 					</figure>
 					<span class="flex-col my-4">
 						<h1 class="mb-4">Douglas Moura</h1>
-						<h4 class="text-[#A1A1A1]">Desenvolver Front-End & Designer Pleno</h4>
+						<h5 class="text-cinza-500">Desenvolver Front-End & Designer Pleno</h5>
 					</span>
-					<span class="mx-auto w-1/2">
+					<span class="mx-auto w-2/3">
 						<a class="btn btn-primario" href="https://github.com/douglas-moura" target="_blank"><iconify-icon icon="tabler:brand-github"></iconify-icon>GitHub</a>
 						<a class="btn btn-secundario" href="https://www.behance.net/douglasmoura" target="_blank"><iconify-icon icon="tabler:brand-behance"></iconify-icon>BeHance</a>
+						<a class="btn btn-secundario" href="https://www.behance.net/douglasmoura" target="_blank"><iconify-icon icon="tabler:file-description"></iconify-icon>Currículo</a>
 					</span>
 				</div>
 			</section>
 			<section id="sessao-habilidades" class="scroll-mt-8">
-				<h2 class="titulo-section">Minhas Habilidades</h2>
-				<div class="container lg:grid-cols-3 lg:gap-8">
+				<h1 class="titulo-section">Habilidades</h1>
+				<div class="container lg:grid-cols-4 lg:gap-8">
 					<div class="">
-						<h3 class="">Front-End</h3>
-						<hr class="traco-subtitulo" />
-						<div id="bloco-habilidades-front" class="grid-habilodades">
+						<h5 class="font-semibold">Web Developer</h5>
+						<div id="bloco-habilidades-front" class="grid-habilidades">
 							<!-- Habilidades renderizadas aqui com TS -->
 						</div>
 					</div>
 					<div class="">
-						<h3 class="">Designer</h3>
-						<hr class="traco-subtitulo" />
-						<div id="bloco-habilidades-design" class="grid-habilodades">
+						<h5 class="font-semibold">Designer</h5>
+						<div id="bloco-habilidades-design" class="grid-habilidades">
 							<!-- Habilidades renderizadas aqui com TS -->
 						</div>
 					</div>
 					<div class="">
-						<h3 class="">Outros conhecimentos</h3>
-						<hr class="traco-subtitulo" />
-						<div id="bloco-habilidades-outro" class="grid-habilodades">
+						<h5 class="font-semibold">Mobile App</h5>
+						<div id="bloco-habilidades-mobi" class="grid-habilidades">
+							<!-- Habilidades renderizadas aqui com TS -->
+						</div>
+					</div>
+					<div class="">
+						<h5 class="font-semibold">Outras Habilidades</h5>
+						<div id="bloco-habilidades-outro" class="grid-habilidades">
 							<!-- Habilidades renderizadas aqui com TS -->
 						</div>
 					</div>
 				</div>
 			</section>
 			<section id="sessao-projetos" class="scroll-mt-8">
-				<h2 class="titulo-section">
-					<iconify-icon icon="tabler:blocks"></iconify-icon>Meus Projetos
-				</h2>
-				<div id="bloco-projetos" class="container lg:grid-cols-3">
+				<h1 class="titulo-section">Projetos</h1>
+				<div class="container">
+					<ul class="filtro-projetos">
+						<li class="filtro-item filtro-item-ativo">Todos</li>
+						<li class="filtro-item">Web Design</li>
+						<li class="filtro-item">Mobile App</li>
+						<li class="filtro-item">Logo Design</li>
+						<li class="filtro-item">Design Gráfico</li>
+					</ul>
+				</div>
+				<div id="bloco-projetos" class="container gap-16">
 					<!-- Projetos renderizados aqui com TS -->
 				</div>
 			</section>
 			<section id="sessao-contato" class="scroll-mt-8 lg:my-8">
-				<h2 class="titulo-section">
-					<iconify-icon icon="tabler:message"></iconify-icon>Fale comigo
-				</h2>
-				<div class="container lg:grid-cols-6">
-					<a class="flex items-center cursor-pointer group lg:flex-col" href="https://github.com/douglas-moura" target="_blank">
-						<iconify-icon icon="tabler:brand-github-filled" class="icone-contato group-hover:text-neutral-400"></iconify-icon>
-						<p class="texto-contato">douglas-moura</p>
-					</a>
-					<a class="flex items-center cursor-pointer group lg:flex-col" href="https://www.behance.net/douglasmoura" target="_blank">
-						<iconify-icon icon="tabler:brand-behance" class="icone-contato group-hover:text-[#1666F7]"></iconify-icon>
-						<p class="texto-contato">douglasmoura</p>
-					</a>
-					<a class="flex items-center cursor-pointer group lg:flex-col" href="https://www.linkedin.com/in/douglas-moura2204/" target="_blank">
-						<iconify-icon icon="tabler:brand-linkedin-filled" class="icone-contato group-hover:text-[#0270AD]"></iconify-icon>
-						<p class="texto-contato">in/douglas-moura2204</p>
-					</a>
-					<a class="flex items-center cursor-pointer group lg:flex-col" href="https://www.instagram.com/doug_moura/" target="_blank">
-						<iconify-icon icon="tabler:brand-instagram-filled" class="icone-contato group-hover:text-[#F6249B]"></iconify-icon>
-						<p class="texto-contato">@doug_moura</p>
-					</a>
-					<a class="flex items-center cursor-pointer group lg:flex-col" href="mailto:douglas12345.dsm@gmail.com" target="_blank">
-						<iconify-icon icon="tabler:mail-filled" class="icone-contato group-hover:text-[#E34133]"></iconify-icon>
-						<p class="texto-contato">douglas12345.dsm@gmail.com</p>
-					</a>
-					<a class="flex items-center cursor-pointer group lg:flex-col">
-						<iconify-icon icon="tabler:brand-whatsapp-filled" class="icone-contato group-hover:text-[#43DA57]"></iconify-icon>
-						<p class="texto-contato">+55 11 95305-5285</p>
-					</a>
+				<h1 class="titulo-section">Fale Comigo</h1>
+				<div class="container">
+					<div class="flex flex-col">
+						<a class="group contato-item" href="https://github.com/douglas-moura" target="_blank">
+							<iconify-icon icon="tabler:brand-github-filled" class="icone-contato group-hover:text-cinza-500"></iconify-icon>
+							<p class="texto-contato">douglas-moura</p>
+						</a>
+						<a class="group contato-item" href="https://www.behance.net/douglasmoura" target="_blank">
+							<iconify-icon icon="tabler:brand-behance" class="icone-contato group-hover:text-[#1666F7]"></iconify-icon>
+							<p class="texto-contato">douglasmoura</p>
+						</a>
+						<a class="group contato-item" href="https://www.linkedin.com/in/douglas-moura2204/" target="_blank">
+							<iconify-icon icon="tabler:brand-linkedin-filled" class="icone-contato group-hover:text-[#0270AD]"></iconify-icon>
+							<p class="texto-contato">in/douglas-moura2204</p>
+						</a>
+						<a class="group contato-item" href="https://www.instagram.com/doug_moura/" target="_blank">
+							<iconify-icon icon="tabler:brand-instagram-filled" class="icone-contato group-hover:text-[#F6249B]"></iconify-icon>
+							<p class="texto-contato">@doug_moura</p>
+						</a>
+						<a class="group contato-item" href="mailto:douglas12345.dsm@gmail.com" target="_blank">
+							<iconify-icon icon="tabler:mail-filled" class="icone-contato group-hover:text-[#E34133]"></iconify-icon>
+							<p class="texto-contato">douglas12345.dsm@gmail.com</p>
+						</a>
+						<a class="group contato-item">
+							<iconify-icon icon="tabler:brand-whatsapp-filled" class="icone-contato group-hover:text-[#43DA57]"></iconify-icon>
+							<p class="texto-contato">+55 11 95305-5285</p>
+						</a>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -135,7 +146,7 @@
 			<section id="rodape">
 				<hr class="w-1/3 mx-auto m-0 p-0 border-orange-500" />
 				<div class="container text-center">
-					<h5 class="">Criado e desenvolvido por Douglas Moura | 2024</h5>
+					<h6 class="text-cinza-500">Criado e desenvolvido por Douglas Moura | 2025</h6>
 				</div>
 			</section>
 		</footer>

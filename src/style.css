@@ -15,11 +15,11 @@
 
 @layer base {
 	* {
-		@apply m-0 p-0 box-border border-[0px] border-red-500 font-poppins text-neutral-800 text-base
+		@apply m-0 p-0 box-border border-[0px] border-red-500 font-poppins text-cinza-800 text-base
 	}
 	
 	body {
-		@apply bg-[#212121] dark:bg-black bg-circulos bg-cover bg-center bg-no-repeat bg-fixed
+		@apply bg-cinza-900 dark:bg-black bg-circulos bg-cover bg-center bg-no-repeat bg-fixed
 	}
 
 	header {
@@ -39,27 +39,27 @@
 	}
 	
 	h1 {
-		@apply text-3xl font-bold lg:text-5xl text-[#EDEDED]
+		@apply text-white text-5xl font-bold
 	}
 	
 	h2 {
-		@apply text-2xl font-bold lg:text-4xl text-[#EDEDED]
+		@apply text-white text-3xl font-bold
 	}
 	
 	h3 {
-		@apply text-lg font-semibold text-[#EDEDED]
+		@apply text-white text-xl font-semibold
 	}
 	
 	h4 {
-		@apply text-base lg:text-base text-[#EDEDED]
+		@apply text-white text-lg
 	}
 	
 	h5 {
-		@apply text-xs text-[#EDEDED]
+		@apply text-white text-base
 	}
 	
 	h6 {
-		@apply text-[10px] text-[#EDEDED]
+		@apply text-white text-[10px]
 	}
 	
 	p {
@@ -77,7 +77,7 @@
 	}
 	
 	.container-full {
-		@apply fixed bg-neutral-50 min-h-dvh max-h-dvh w-full top-0 left-0
+		@apply fixed bg-white min-h-dvh max-h-dvh w-full top-0 left-0
 	}
 
 	.menu-mobile {
@@ -93,23 +93,19 @@
 	}
 	
 	.nav-link-desktop p {
-		@apply z-30 absolute text-[#D3D3D3] my-auto ml-2
+		@apply z-30 absolute text-cinza-200 my-auto ml-2
 	}
 
 	.nav-link-desktop div {
-		@apply z-20 h-10 w-full transition-all duration-150 ease-in-out bg-[#f45714] scale-x-0  origin-left
+		@apply z-20 h-10 w-full transition-all duration-150 ease-in-out bg-laranja scale-x-0  origin-left
 	}
 	
 	.titulo-section {
-		@apply flex w-5/6 mx-auto p-0 mb-4 items-center xl:w-10/12 2xl:w-8/12
+		@apply flex w-5/6 mx-auto p-0 mb-4 text-laranja font-extralight items-center xl:w-10/12 2xl:w-8/12
 	}
 	
 	.titulo-section iconify-icon {
-		@apply mr-4 text-4xl text-[#f45714]
-	}
-	
-	.traco-subtitulo {
-		@apply w-1/12 border-2 border-[#f45714] lg:border-4 lg:mt-1 lg:w-2/12
+		@apply mr-4 text-4xl text-laranja
 	}
 	
 	.btn {
@@ -121,7 +117,7 @@
 	}
 	
 	.btn-primario {
-		@apply bg-[#f45714] text-white
+		@apply bg-laranja text-white
 	}
 	
 	.btn-primario iconify-icon {
@@ -129,51 +125,67 @@
 	}
 	
 	.btn-secundario {
-		@apply bg-[#3B3B3B] text-[#F45714]
+		@apply bg-cinza-800 text-laranja
 	}
 	
 	.btn-secundario iconify-icon {
-		@apply text-[#F45714]
+		@apply text-laranja
 	}
 	
-	.grid-habilodades {
-		@apply container w-full grid-cols-3 lg:gap-2
+	.grid-habilidades {
+		@apply container w-full grid-cols-2 lg:gap-2
 	}
 	
 	.box-habilidade {
-		@apply flex-col w-full bg-white rounded shadow text-center justify-start items-center p-4
+		@apply flex-col w-full aspect-square bg-cinza-800 rounded-lg shadow text-center justify-center items-center py-4 px-2
 	}
 	
 	.box-habilidade iconify-icon {
-		@apply text-4xl mb-4 lg:text-3xl lg:mb-2
+		@apply text-4xl text-cinza-200 mb-4 lg:text-4xl lg:mb-2
 	}
 	
 	.box-habilidade p {
-		@apply text-xs lg:text-[10px]
+		@apply text-cinza-200 text-cinza-500 lg:text-xs
+	}
+
+	.filtro-projetos {
+		@apply flex w-full justify-between w-8/12 mx-auto 
+	}
+
+	.filtro-item {
+		@apply text-sm text-cinza-200 pb-2 border-b-2 border-cinza-900 cursor-pointer hover:text-laranja transition-all duration-150
+	}
+
+	.filtro-item-ativo {
+		@apply text-laranja border-laranja
 	}
 	
 	.box-projeto {
-		@apply w-full rounded-xl transition overflow-hidden shadow pt-32 bg-[#3B3B3B] flex-col p-8 border-b-0 border-[#f45714] cursor-pointer
+		@apply w-full bg-cinza-800 rounded-lg overflow-hidden flex rounded-lg transition flex cursor-pointer
+	}
+
+	.box-projeto-infos {
+		@apply p-8 w-2/5 flex flex-col justify-between
+	}
+	
+	.box-projeto-titulo {
+		@apply font-semibold text-laranja mb-12
+	}
+
+	.box-projeto-subtitulo {
+		@apply text-cinza-200 mb-4
 	}
 	
 	.box-projeto-icones iconify-icon {
-		@apply mr-2 text-neutral-600 mt-4 text-2xl
+		@apply mr-2 text-cinza-200 text-4xl
+	}
+
+	.box-projeto-img {
+		@apply w-3/5 aspect-video object-cover
 	}
 		
 	.container-projeto {
 		@apply container-full transition-all z-50 duration-700 bg-white
-	}
-	
-	.icone-contato {
-		@apply text-xl rounded-full aspect-square flex items-center justify-center mr-4 transition lg:m-0 lg:mb-2 lg:text-3xl
-	}
-	
-	.texto-contato {
-		@apply pl-4 border-l border-neutral-400 lg:p-0 lg:border-0 lg:text-[10px] 2xl:text-xs
-	}
-	
-	.circulo {
-		@apply absolute -mt-3 -ml-4 h-full rounded-3xl aspect-square border-4 border-[#f45714] lg:-mt-5 lg:-ml-6
 	}
 	
 	#sessao-intro {
@@ -186,6 +198,42 @@
 
 	.container-perfil {
 		@apply items-center text-center 
+	}
+
+	.box-especialidade {
+		@apply bg-cinza-800 p-6 rounded-lg aspect-square flex flex-col justify-between items-center
+	}
+
+	.box-especialidade-icone {
+		@apply text-cinza-200 text-6xl
+	}
+
+	.box-especialidade-titulo {
+		@apply my-6 font-semibold text-cinza-200 text-base
+	}
+
+	.box-especialidade-barra {
+		@apply bg-cinza-700 w-full h-[4px] overflow-hidden rounded-full
+	}
+
+	.box-especialidade-barra-preench {
+		@apply bg-laranja h-full w-2/3
+	}
+
+	.box-especialidade-num {
+		@apply w-full font-bold text-right mt-2 text-cinza-200
+	}
+
+	.contato-item {
+		@apply flex items-center cursor-pointer mb-4 last:mb-0
+	}
+	
+	.icone-contato {
+		@apply mr-4 text-cinza-200 text-2xl flex items-center justify-center transition
+	}
+	
+	.texto-contato {
+		@apply text-cinza-200 text-xs
 	}
 }
 
@@ -203,7 +251,7 @@
 		
 		/* Handle */
 		::-webkit-scrollbar-thumb {
-			background: #aaa; 
+			background: #f45714;
 			border-radius: 2rem;
 		}
 	}

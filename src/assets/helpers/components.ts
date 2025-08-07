@@ -11,23 +11,35 @@ export const boxHabilidade = (data: Habilidade): HTMLSpanElement => {
 }
 
 export const boxProjeto = (data: Projeto): HTMLSpanElement => {
-	const box = document.createElement('span')
+	const box: HTMLDivElement = document.createElement('div')
 	box.classList.add('box-projeto')
-	box.classList.add('group')
 	box.setAttribute('id', data.cod)
+
+	const boxInfoProjeto: HTMLDivElement = document.createElement('div')
+	boxInfoProjeto.classList.add('box-projeto-infos')
 	
-	box.innerHTML =
-		`<h4 class="mb-0 font-semibold text-orange-500 duration-200 group-hover:-mt-1 group-hover:mb-1">${data.nome}</h4>
-		<h5 class="">${data.descr_breve}</h5>`
+	boxInfoProjeto.innerHTML = `
+		<span class="flex-col">
+			<h6 class="box-projeto-subtitulo">${data.descr_breve}</h6>
+			<h2 class="box-projeto-titulo">${data.nome}</h2>
+		</span>
+	`
 	
-	const boxIcones = document.createElement('span')
+	const boxIcones: HTMLSpanElement = document.createElement('span')
 	boxIcones.classList.add('box-projeto-icones')
 	
 	data.tecnologias.forEach(tecn => {
 		boxIcones.innerHTML += `<iconify-icon icon="tabler:${getHabilidade(tecn, 'icone')}"></iconify-icon>`
 	})
 
-	box.appendChild(boxIcones)
+	boxInfoProjeto.appendChild(boxIcones)
+
+	const imgProjeto: HTMLImageElement = document.createElement('img')
+	imgProjeto.classList.add('box-projeto-img')
+	imgProjeto.setAttribute('src', `../img/projetos/${data.cod}/1.jpg`)
+
+	box.appendChild(boxInfoProjeto)
+	box.appendChild(imgProjeto)
 	
 	return box
 }
