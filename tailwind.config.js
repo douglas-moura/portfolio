@@ -15,6 +15,8 @@ module.exports = {
             colors: {
                 'laranja': '#f45714',
                 'cinza': {
+                    '50': '#FAFAFA',
+                    '100': '#EDEDED',
                     '200': '#D3D3D3',
                     '500': '#878787',
                     '700': '#545454',

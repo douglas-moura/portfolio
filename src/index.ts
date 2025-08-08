@@ -1,6 +1,6 @@
 import './style.css'
 import { meusProjetos, minhasHabilidades } from './assets/helpers/dados'
-import { boxHabilidade, boxProjeto, projetoContainer } from './assets/helpers/components'
+import { boxHabilidade, boxProjeto, projetoContainer, vizualizardorImagem } from './assets/helpers/components'
 import { Projeto, Habilidade } from './assets/helpers/interfaces'
 
 // MENU MOBILE
@@ -16,13 +16,14 @@ const fecharMenu = document.getElementById('btn-fechar-menu') as HTMLElement
 fecharMenu.addEventListener('click', () => toggleMenu())
 
 const navLinksMobile = document.getElementsByClassName('nav-link-mobile') as HTMLCollection
+
 for (let index = 0; index < navLinksMobile.length; index++) {
 	const element = navLinksMobile[index];
 	element.addEventListener('click', () => toggleMenu())
 }
 
 // HABILIDADES
-const renderHabilidades = () => {
+const renderHabilidades = (): void => {
 	minhasHabilidades.forEach(element => {
 		const habilidade: Habilidade = element
 		const bloco = document.getElementById(`bloco-habilidades-${element.tipo}`) as HTMLDivElement
@@ -30,13 +31,69 @@ const renderHabilidades = () => {
 	})
 }
 
-const renderProjetos = () => {
+// PROJETOS
+
+// Filtros de projetos
+const btnFiltro = document.getElementsByClassName('filtro-item') as HTMLCollection
+const btnFiltroIcone = document.getElementsByClassName('filtro-item-icon') as HTMLCollection
+const btnFiltroTexto = document.getElementsByClassName('filtro-item-text') as HTMLCollection
+
+Array.from(btnFiltro).forEach((item, index) => {
+	item.addEventListener('click', () => {
+		filtrar(index)
+	})
+})
+
+const filtrar = (n: number) => {
+	for (let index = 0; index < btnFiltro.length; index++) {
+		if (n == index) {
+			btnFiltro[index].classList.add('filtro-item-ativo')
+			btnFiltroIcone[index].classList.add('text-laranja')
+			btnFiltroTexto[index].classList.add('text-laranja')
+		} else {
+			btnFiltro[index].classList.remove('filtro-item-ativo')
+			btnFiltroIcone[index].classList.remove('text-laranja')
+			btnFiltroTexto[index].classList.remove('text-laranja')
+		}
+	}
+}
+
+const btnFiltroTodos = document.getElementById('filtro-todos') as HTMLUListElement
+btnFiltroTodos.addEventListener('click', () => filtraProjetos())
+
+const btnWebDesign = document.getElementById('filtro-web') as HTMLUListElement
+btnWebDesign.addEventListener('click', () => filtraProjetos('web-design'))
+
+const btnMobileApp = document.getElementById('filtro-mobile') as HTMLUListElement
+btnMobileApp.addEventListener('click', () => filtraProjetos('mobile-app'))
+
+const btnLogoDesign = document.getElementById('filtro-logo') as HTMLUListElement
+btnLogoDesign.addEventListener('click', () => filtraProjetos('logo-design'))
+
+const btnDesignGrafico = document.getElementById('filtro-design') as HTMLUListElement
+btnDesignGrafico.addEventListener('click', () => filtraProjetos('design-grafico'))
+
+const filtraProjetos = (tipo?: string) => {
+	if (!tipo) {
+		renderProjetos()
+	} else {
+		renderProjetos(tipo)
+	}
+}
+
+// Grade de projetos
+
+const renderProjetos = (tipo?: string): void => {
+	const bloco = document.getElementById(`bloco-projetos`) as HTMLDivElement
+	bloco.innerHTML = ''
+
 	// montar blocos de projetos
 	meusProjetos.forEach(element => {
 		const projeto: Projeto = element
 		if (projeto.ativo) {
-			const bloco = document.getElementById(`bloco-projetos`) as HTMLDivElement
-			bloco.appendChild(boxProjeto(projeto))
+			const novoBox: HTMLDivElement = boxProjeto(projeto)
+			if (typeof tipo == 'string' && element.tipo != tipo) novoBox.classList.add('hidden')
+			bloco.appendChild(novoBox)
 		}
 	})
 
@@ -48,7 +105,9 @@ const renderProjetos = () => {
 	}
 }
 
-const visualizarProjetos = (cod: string) => {
+// Container do projetos
+
+const visualizarProjetos = (cod: string): void => {
 	// abrir projeto
 	const sessaoProjetos = document.getElementById('sessao-projetos') as HTMLElement
 	const container: HTMLDivElement = projetoContainer(cod)
@@ -57,9 +116,11 @@ const visualizarProjetos = (cod: string) => {
 		container.classList.toggle('translate-y-full')
 	}, 100)
 	
+	captuarImgsGaleria()
+
 	// fechar projeto
 	const fecharProjeto = document.getElementById('fechar-projeto') as HTMLSpanElement
-	
+
 	fecharProjeto.addEventListener('click', () => {
 		//alert('fechou')
 		container.classList.toggle('translate-y-full')
@@ -69,6 +130,29 @@ const visualizarProjetos = (cod: string) => {
 	})
 }
 
+const captuarImgsGaleria = () => {
+	const imgsProjetos = document.getElementsByClassName('box-img-galeria-projeto') as HTMLCollection
+	
+	Array.from(imgsProjetos).forEach((item, index) => {
+		item.addEventListener('click', () => {
+			console.log(item.children[0].getAttribute('src'));
+			
+			//expandirImg(index, imgsProjetos)
+			vizualizardorImagem(item.children[0].getAttribute('src'))
+		})
+	})
+}
+
+const expandirImg = (n: number, imgs: HTMLCollection) => {
+	for (let index = 0; index < imgs.length; index++) {
+		
+		if (n == index) {
+			imgs[index].classList.add('col-span-2')
+		} else {
+			imgs[index].classList.remove('col-span-2')
+		}
+	}
+}
 
 // EXECUTAR AO CARREGAR
 window.addEventListener('DOMContentLoaded', () => {

@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="./style.css" type="text/css" media="all" />
 		<title></title>
 	</head>
-	<body class="barra-rolagem">
+	<body class="barra-rolagem" id="body">
 		<header class="">
 			<nav class="items-center">
 				<span class="items-center lg:my-8">
@@ -98,15 +98,30 @@
 			<section id="sessao-projetos" class="scroll-mt-8">
 				<h1 class="titulo-section">Projetos</h1>
 				<div class="container">
-					<ul class="filtro-projetos">
-						<li class="filtro-item filtro-item-ativo">Todos</li>
-						<li class="filtro-item">Web Design</li>
-						<li class="filtro-item">Mobile App</li>
-						<li class="filtro-item">Logo Design</li>
-						<li class="filtro-item">Design Gráfico</li>
-					</ul>
+					<div class="filtro-projetos">
+						<span id="filtro-todos" class="filtro-item group filtro-item-ativo">
+							<iconify-icon class="filtro-item-icon text-laranja group-hover:text-laranja" icon="tabler:menu-3"></iconify-icon>
+							<p class="filtro-item-text text-laranja group-hover:text-laranja">Todos</p>
+						</span>
+						<span id="filtro-web" class="filtro-item group">
+							<iconify-icon class="filtro-item-icon group-hover:text-laranja" icon="tabler:device-desktop"></iconify-icon>
+							<p class="filtro-item-text group-hover:text-laranja">Web Design</p>
+						</span>
+						<span id="filtro-mobile" class="filtro-item group">
+							<iconify-icon class="filtro-item-icon group-hover:text-laranja" icon="tabler:device-mobile"></iconify-icon>
+							<p class="filtro-item-text group-hover:text-laranja">Mobile App</p>
+						</span>
+						<span id="filtro-logo" class="filtro-item group">
+							<iconify-icon class="filtro-item-icon group-hover:text-laranja" icon="tabler:bulb"></iconify-icon>
+							<p class="filtro-item-text group-hover:text-laranja">Logo Design</p>
+						</span>
+						<span id="filtro-design" class="filtro-item group">
+							<iconify-icon class="filtro-item-icon group-hover:text-laranja" icon="tabler:photo-edit"></iconify-icon>
+							<p class="filtro-item-text group-hover:text-laranja">Design Gráfico</p>
+						</span>
+					</div>
 				</div>
-				<div id="bloco-projetos" class="container gap-16">
+				<div id="bloco-projetos" class="container gap-8 transition-all duration-150">
 					<!-- Projetos renderizados aqui com TS -->
 				</div>
 			</section>

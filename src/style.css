@@ -149,23 +149,31 @@
 	}
 
 	.filtro-projetos {
-		@apply flex w-full justify-between w-8/12 mx-auto 
+		@apply grid grid-cols-5 gap-8 w-full justify-between w-10/12 mx-auto 
 	}
 
 	.filtro-item {
-		@apply text-sm text-cinza-200 pb-2 border-b-2 border-cinza-900 cursor-pointer hover:text-laranja transition-all duration-150
+		@apply justify-center items-center pb-4 border-b-2 border-cinza-900 cursor-pointer hover:text-laranja
 	}
+
+	.filtro-item-icon {
+		@apply text-2xl mr-2 text-cinza-200
+	} 
+
+	.filtro-item-text {
+		@apply text-sm text-cinza-200
+	} 
 
 	.filtro-item-ativo {
 		@apply text-laranja border-laranja
 	}
 	
 	.box-projeto {
-		@apply w-full bg-cinza-800 rounded-lg overflow-hidden flex rounded-lg transition flex cursor-pointer
+		@apply w-full min-h-[500px] bg-white overflow-hidden flex rounded-lg flex cursor-pointer
 	}
 
 	.box-projeto-infos {
-		@apply p-8 w-2/5 flex flex-col justify-between
+		@apply p-8 w-1/3 flex flex-col justify-between
 	}
 	
 	.box-projeto-titulo {
@@ -173,19 +181,23 @@
 	}
 
 	.box-projeto-subtitulo {
-		@apply text-cinza-200 mb-4
+		@apply text-cinza-500
 	}
 	
 	.box-projeto-icones iconify-icon {
-		@apply mr-2 text-cinza-200 text-4xl
+		@apply mr-2 text-cinza-800 text-2xl
 	}
 
 	.box-projeto-img {
-		@apply w-3/5 aspect-video object-cover
+		@apply w-2/3 aspect-video object-cover brightness-[.97]
 	}
 		
 	.container-projeto {
 		@apply container-full transition-all z-50 duration-700 bg-white
+	}
+
+	.img-galeria-projeto {
+		@apply w-full cursor-pointer aspect-square object-cover object-top	
 	}
 	
 	#sessao-intro {
@@ -235,13 +247,21 @@
 	.texto-contato {
 		@apply text-cinza-200 text-xs
 	}
+
+	.imgAberta {
+		@apply w-1/2
+	}
+
+	.peliculaBgImg {
+		@apply flex backdrop-blur py-28 overflow-y-scroll justify-center items-start bg-[#000000c5] fixed z-50 top-0 left-0 w-full h-full
+	}
 }
 
 @layer utilities {
 	* {
 		/* width */
 		::-webkit-scrollbar {
-			width: .3rem;
+			width: .5rem;
 		}
 		
 		/* Track */
