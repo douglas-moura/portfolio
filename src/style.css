@@ -19,7 +19,7 @@
 	}
 	
 	body {
-		@apply bg-cinza-900 dark:bg-black bg-circulos bg-cover bg-center bg-no-repeat bg-fixed
+		@apply bg-cinza-900 dark:bg-black bg-cover bg-center bg-no-repeat bg-fixed
 	}
 
 	header {
@@ -59,7 +59,7 @@
 	}
 	
 	h6 {
-		@apply text-white text-[10px]
+		@apply text-white text-xs
 	}
 	
 	p {
@@ -169,7 +169,7 @@
 	}
 	
 	.box-projeto {
-		@apply w-full min-h-[500px] bg-white overflow-hidden flex rounded-lg flex cursor-pointer
+		@apply w-full min-h-[400px] bg-white overflow-hidden flex rounded-lg flex cursor-pointer
 	}
 
 	.box-projeto-infos {
@@ -237,7 +237,7 @@
 	}
 
 	.contato-item {
-		@apply flex items-center cursor-pointer mb-4 last:mb-0
+		@apply flex items-center cursor-pointer mb-4
 	}
 	
 	.icone-contato {
