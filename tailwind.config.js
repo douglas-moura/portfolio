@@ -11,9 +11,10 @@ module.exports = {
         		'foto-perfil': "url('/src/assets/img/foto-perfil.jpg')",
         		'circulos': "url('/src/assets/img/background-circulos.png')",
         		'cidade': "url('/src/assets/img/bg-cidade.jpg')",
+        		'dots': "url('/src/assets/img/bg-dots.png')",
         	},
             colors: {
-                'laranja': '#f45714',
+                'laranja': '#F54414',
                 'cinza': {
                     '50': '#FAFAFA',
                     '100': '#EDEDED',

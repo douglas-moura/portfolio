@@ -3,7 +3,8 @@ export interface Habilidade {
 	cod: string,
 	nome: string,
 	icone: string,
-	tipo: string
+	tipo: string,
+	cor: string
 }
 
 export interface Projeto {

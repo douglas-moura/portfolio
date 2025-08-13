@@ -4,15 +4,28 @@ import { minhasHabilidades, meusProjetos, getHabilidade } from './dados'
 export const boxHabilidade = (data: Habilidade): HTMLSpanElement => {
 	const box = document.createElement('span')
 	box.classList.add('box-habilidade')
+	box.classList.add('group')
+	
+	/*
+	box.addEventListener('mouseenter', () => {
+		box.style.backgroundColor = data.cor
+		box.style.color = '#fff'
+	})
+	box.addEventListener('mouseleave', () => {
+		box.style.backgroundColor = ''
+	})
+	*/
+
 	box.innerHTML =
-		`<iconify-icon icon="tabler:${data.icone}" class=""></iconify-icon>
-		<p>${data.nome}</p>`
+		`<iconify-icon icon="${data.icone}" class="box-habilidade-icon"></iconify-icon>
+		<p class="box-habilidade-text">${data.nome}</p>`
 	return box
 }
 
 export const boxProjeto = (data: Projeto): HTMLDivElement => {
 	const box: HTMLDivElement = document.createElement('div')
 	box.classList.add('box-projeto')
+	box.classList.add('group')
 	box.setAttribute('id', data.cod)
 
 	const boxInfoProjeto: HTMLDivElement = document.createElement('div')
@@ -29,14 +42,14 @@ export const boxProjeto = (data: Projeto): HTMLDivElement => {
 	boxIcones.classList.add('box-projeto-icones')
 	
 	data.tecnologias.forEach(tecn => {
-		boxIcones.innerHTML += `<iconify-icon icon="tabler:${getHabilidade(tecn, 'icone')}"></iconify-icon>`
+		boxIcones.innerHTML += `<iconify-icon icon="${getHabilidade(tecn, 'icone')}"></iconify-icon>`
 	})
 
 	boxInfoProjeto.appendChild(boxIcones)
 
 	const imgProjeto: HTMLImageElement = document.createElement('img')
 	imgProjeto.classList.add('box-projeto-img')
-	imgProjeto.setAttribute('src', `../img/projetos/${data.cod}/1.jpg`)
+	imgProjeto.setAttribute('src', `../img/projetos/${data.cod}/0.jpg`)
 
 	box.appendChild(boxInfoProjeto)
 	box.appendChild(imgProjeto)
@@ -58,7 +71,7 @@ export const projetoContainer = (cod: string): HTMLDivElement => {
 				const tecn = element.tecnologias[index];
 				listaTecs.innerHTML +=
 					`<li class="mb-2 text-sm items-center flex">
-						<iconify-icon class="mr-2 text-2xl" icon="tabler:${getHabilidade(tecn, 'icone')}"></iconify-icon>
+						<iconify-icon class="mr-2 text-2xl" icon="${getHabilidade(tecn, 'icone')}"></iconify-icon>
 						${getHabilidade(tecn, 'nome')}
 					</li>`
 			}
@@ -129,7 +142,7 @@ export const vizualizardorImagem = (proj: string | null): void => {
 	pelicula.classList.add('peliculaBgImg')
 
 	const img: HTMLImageElement = document.createElement('img')
-	img.classList.add('imgAberta')
+	img.classList.add('img-aberta')
 	proj ? img.setAttribute('src', proj) : null
 
 	const body = document.getElementById('body')
