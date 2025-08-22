@@ -189,7 +189,7 @@
 	}
 
 	.box-projeto-img {
-		@apply w-2/3 aspect-video object-cover object-top transition-all duration-150 brightness-[.97] group-hover:translate-x-4
+		@apply w-2/3 aspect-video object-cover object-center transition-all duration-150 brightness-[.97] group-hover:translate-x-4
 	}
 		
 	.container-projeto {

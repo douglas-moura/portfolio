@@ -10,7 +10,7 @@ export const meusProjetos = [
 		],
 		link_site: 'https://www.behance.net/gallery/218120275/Logo-Pessoal-Identidade-Visual',
 		link_git: false,
-		imgs: 18,
+		imgs: 23,
 		tipo: 'logo-design',
 		ativo: true
 	},
@@ -36,7 +36,7 @@ export const meusProjetos = [
 		descr_breve: 'WebSite Institucional',
 		descr_compl: 'A GTX100 é uma empresa especializada em assessoria para aumento de performance, realizando diagnósticos, avaliando indicadores e implementando campanhas de melhorias para equipes comerciais. Oferece soluções focadas em motivar equipes e impulsionar a produtividade das empresas. <br><br> Neste projeto eu reestruturei o site da GTX100 do zero, utilizando WordPress para criar uma plataforma moderna, funcional e alinhada com os objetivos do cliente. O trabalho incluiu o design e implementação de todas as páginas, com foco na usabilidade e em uma navegação intuitiva. <br><br> O site está no ar oficialmente, representando a marca com uma identidade visual renovada e uma experiência otimizada para os usuários.',
 		tecnologias: [
-			'wss', 'css', 'jsc'
+			'wss', 'css'
 		],
 		imgs: 6,
 		link_site: 'https://gtx100.com.br/',
@@ -66,11 +66,11 @@ export const meusProjetos = [
 		descr_breve: 'Jogo Mobile Android',
 		descr_compl: 'Desenvolvi este jogo da memória como parte dos meus estudos em JavaScript, explorando lógica de programação e manipulação do DOM. <br><br> É um jogo da memória interativo e prático, disponível no GitHub. O jogo foi construído com foco em funcionalidades simples e intuitivas, além de uma interface agradável. Ele permite aos usuários testar suas habilidades de memorização em um ambiente responsivo e funcional.',
 		tecnologias: [
-			'htm', 'css', 'tai', 'jsc'
+			'rea', 'exp', 'tsc'
 		],
 		link_site: false,
 		link_git: 'https://github.com/douglas-moura/projeto___jogo-da-memoria/',
-		imgs: 4,
+		imgs: 6,
 		tipo: 'mobile-app',
 		ativo: true
 	},
