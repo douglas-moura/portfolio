@@ -111,11 +111,11 @@ export const meusProjetos = [
 		descr_breve: 'Manual de Identidade Visual',
 		descr_compl: 'Este manual foi desenvolvido para orientar a aplicação correta do logotipo, cores, tipografia e outros elementos que compõem a identidade visual da Agro&Solar. <br><br> Ele serve como uma ferramenta indispensável para designers, equipes internas e parceiros externos que trabalham em projetos da marca, garantindo que a essência da Agro&Solar seja transmitida com clareza e força em todos os materiais.',
 		tecnologias: [
-			'ill', 'psd'
+			'ill', 'ppt'
 		],
 		link_site: 'https://www.behance.net/gallery/217952013/Agro-Solar-Identidade-Visual',
 		link_git: false,
-		imgs: 14,
+		imgs: 21,
 		tipo: 'logo-design',
 		ativo: true
 	},
