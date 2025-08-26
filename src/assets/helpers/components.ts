@@ -105,7 +105,7 @@ export const projetoContainer = (cod: string): HTMLDivElement => {
 			// montar container do projeto
 			container.innerHTML =
 				`<div class="container grid-cols-2 pb-0">
-					<div>
+					<div class="pb-6 lg:pb-0">
 						<h2 class="text-cinza-800">${element.nome}</h2>
 						<h6 class="mb-0 text-laranja">${element.data}</h6>
 					</div>
@@ -125,7 +125,7 @@ export const projetoContainer = (cod: string): HTMLDivElement => {
 						</span>
 					</span>
 					<div class="lg:h-full lg:overflow-y-scroll lg:col-span-3">
-						<span class="grid grid-cols-3 gap-4 pr-4">
+						<span class="grid gap-2 grid-cols-2 pb-8 lg:pr-4 lg:gap-4 lg:grid-cols-3">
 							${listaImgs.innerHTML}
 						</span>
 					</div>

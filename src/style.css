@@ -39,11 +39,11 @@
 	}
 	
 	h1 {
-		@apply text-white text-5xl font-bold
+		@apply text-white font-bold text-3xl lg:text-5xl
 	}
 	
 	h2 {
-		@apply text-white text-3xl font-bold
+		@apply text-white font-bold text-xl lg:text-3xl
 	}
 	
 	h3 {
@@ -55,7 +55,7 @@
 	}
 	
 	h5 {
-		@apply text-white text-base
+		@apply text-white text-sm lg:text-base
 	}
 	
 	h6 {
@@ -78,6 +78,10 @@
 	
 	.container-full {
 		@apply fixed bg-white min-h-dvh max-h-dvh w-full top-0 left-0
+	}
+
+	.icon-menu-mobile {
+		@apply text-3xl text-cinza-200 cursor-pointer
 	}
 
 	.menu-mobile {
@@ -109,7 +113,7 @@
 	}
 	
 	.btn {
-		@apply transition-all duration-150 px-6 py-3 mx-2 w-full font-semibold rounded-lg shadow flex items-center text-sm justify-center cursor-pointer hover:scale-105
+		@apply transition-all duration-150 px-6 py-3 w-full font-semibold rounded-lg shadow flex items-center text-sm justify-center cursor-pointer hover:scale-105 my-2 lg:my-0 lg:mx-2
 	}
 	
 	.btn iconify-icon {
@@ -133,7 +137,7 @@
 	}
 	
 	.grid-habilidades {
-		@apply container w-full grid-cols-2 lg:gap-2
+		@apply container w-full gap-2 grid-cols-3 lg:grid-cols-2
 	}
 	
 	.box-habilidade {
@@ -145,15 +149,15 @@
 	}
 	
 	.box-habilidade-text {
-		@apply text-cinza-500 lg:text-xs
+		@apply text-cinza-500 text-xs
 	}
 
 	.filtro-projetos {
-		@apply grid grid-cols-5 gap-8 w-full justify-between w-10/12 mx-auto 
+		@apply flex gap-8 w-auto justify-between mx-auto lg:w-10/12
 	}
 
 	.filtro-item {
-		@apply justify-center items-center pb-4 border-b-2 border-cinza-900 cursor-pointer hover:text-laranja
+		@apply justify-center w-40 items-center pb-4 border-b-2 border-cinza-900 cursor-pointer hover:text-laranja
 	}
 
 	.filtro-item-icon {
@@ -169,11 +173,11 @@
 	}
 	
 	.box-projeto {
-		@apply w-full min-h-[400px] bg-white overflow-hidden flex rounded-lg flex cursor-pointer
+		@apply w-full min-h-[350px] bg-white overflow-hidden flex rounded-lg cursor-pointer flex-col justify-between lg:flex-row lg:min-h-[400px]
 	}
 
 	.box-projeto-infos {
-		@apply p-8 w-1/3 flex flex-col justify-between transition-all duration-150 
+		@apply p-8 w-full flex flex-col justify-between transition-all duration-150 lg:w-1/3
 	}
 	
 	.box-projeto-titulo {
@@ -189,7 +193,7 @@
 	}
 
 	.box-projeto-img {
-		@apply w-2/3 aspect-video object-cover object-center transition-all duration-150 brightness-[.97] group-hover:translate-x-4
+		@apply w-full aspect-video object-cover object-center transition-all duration-150 brightness-[.97] lg:group-hover:translate-x-4 lg:w-2/3
 	}
 		
 	.container-projeto {
@@ -249,15 +253,11 @@
 	}
 
 	.img-aberta {
-		@apply w-2/3
+		@apply lg:w-2/3
 	}
 
 	.peliculaBgImg {
-		@apply flex backdrop-blur py-24 overflow-y-scroll justify-center items-start bg-[#000000c5] fixed z-50 top-0 left-0 w-full h-full
-	}
-
-	.teste {
-		@apply hover:bg-[#F7DF1E]
+		@apply flex backdrop-blur overflow-y-scroll justify-center items-start bg-[#000000c5] fixed z-50 top-0 left-0 w-full h-full p-4 lg:py-24
 	}
 }
 

@@ -32,7 +32,7 @@
 					</a>
 				</span>
 				<span class="justify-end lg:hidden">
-					<iconify-icon id="btn-abrir-menu" icon="tabler:menu-2" class="text-3xl right-0 cursor-pointer"></iconify-icon>
+					<iconify-icon id="btn-abrir-menu" icon="tabler:menu-2" class="icon-menu-mobile"></iconify-icon>
 				</span>
 				<div id="menu-mobile" class="menu-mobile translate-x-full">
 					<div class="container">
@@ -52,14 +52,14 @@
 		<main>
 			<section id="sessao-intro" class="scroll-mt-8">
 				<div class="container z-20 container-perfil">
-					<figure class="w-56 mx-auto">
+					<figure class="mx-auto w-40 lg:w-56">
 						<img class="h-full rounded-full" src="./img/foto-perfil-2.jpg" alt="" id="img-perfil" />
 					</figure>
 					<span class="flex-col my-4">
 						<h1 class="mb-4">Douglas Moura</h1>
 						<h5 class="text-cinza-500">Desenvolver Front-End & Designer Pleno</h5>
 					</span>
-					<span class="mx-auto w-2/3">
+					<span class="mx-auto w-3/4 flex-col lg:w-2/3 lg:flex-row">
 						<a class="btn btn-primario" href="https://github.com/douglas-moura" target="_blank"><iconify-icon icon="tabler:brand-github"></iconify-icon>GitHub</a>
 						<a class="btn btn-secundario" href="https://www.behance.net/douglasmoura" target="_blank"><iconify-icon icon="tabler:brand-behance"></iconify-icon>BeHance</a>
 						<a class="btn btn-secundario" href="https://www.behance.net/douglasmoura" target="_blank"><iconify-icon icon="tabler:file-description"></iconify-icon>Currículo</a>
@@ -97,7 +97,7 @@
 			</section>
 			<section id="sessao-projetos" class="scroll-mt-8">
 				<h1 class="titulo-section">Projetos</h1>
-				<div class="container">
+				<div class="container overflow-y-scroll">
 					<div class="filtro-projetos">
 						<span id="filtro-todos" class="filtro-item group filtro-item-ativo">
 							<iconify-icon class="filtro-item-icon text-laranja group-hover:text-laranja" icon="tabler:menu-3"></iconify-icon>
@@ -127,7 +127,7 @@
 			</section>
 			<section id="sessao-contato" class="scroll-mt-8 lg:my-8">
 				<h1 class="titulo-section">Fale Comigo</h1>
-				<div class="container grid-cols-2 gap-4">
+				<div class="container lg:grid-cols-2 gap-4">
 					<div class="flex flex-col">
 						<a class="group contato-item" href="https://github.com/douglas-moura" target="_blank">
 							<iconify-icon icon="tabler:brand-github" class="icone-contato group-hover:text-cinza-500"></iconify-icon>
@@ -156,7 +156,7 @@
 						</a>
 						-->
 					</div>
-					<div class="pr-24">
+					<div class="pt-12 lg:pr-24 lg:pt-0">
 						<h3 class="font-semibold mb-4 text-cinza-200">Sobre mim</h3>
 						<p class="text-cinza-500">Desenvolvedor Front-End especializado em JavaScript, atualmente me aprofundando em Vue.js 3 e React Native (Expo), unindo código limpo e performance com criatividade em design gráfico e identidade visual. Entrego soluções digitais que são funcionais, intuitivas e visualmente marcantes.</p>
 					</div>
@@ -165,7 +165,7 @@
 		</main>
 		<footer>
 			<section id="rodape">
-				<div class="container grid-cols-2 pt-0">
+				<div class="container pt-0 lg:grid-cols-2">
 					<h6 class="text-cinza-500">2024 desenvolvido por Douglas Moura.</h6>
 				</div>
 			</section>
