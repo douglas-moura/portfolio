@@ -87,7 +87,7 @@ export const meusProjetos = [
 		link_git: false,
 		imgs: 3,
 		tipo: 'design-grafico',
-		ativo: true
+		ativo: false
 	},
 	{
 		cod: 'ifth',
