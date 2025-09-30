@@ -113,11 +113,11 @@
 	}
 	
 	.btn {
-		@apply transition-all duration-150 px-6 py-3 w-full font-semibold rounded-lg shadow flex items-center text-sm justify-center cursor-pointer hover:scale-105 my-2 lg:my-0 lg:mx-2
+		@apply transition-all duration-150 px-4 py-2 w-full font-semibold rounded-lg shadow flex items-center text-sm justify-center cursor-pointer hover:scale-105 my-2 lg:my-0 lg:mx-2
 	}
 	
 	.btn iconify-icon {
-		@apply mr-2 text-xl  
+		@apply mr-2 text-lg  
 	}
 	
 	.btn-primario {
