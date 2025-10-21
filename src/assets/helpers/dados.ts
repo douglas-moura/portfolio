@@ -60,6 +60,21 @@ export const meusProjetos = [
 		ativo: false
 	},
 	{
+		cod: 'flyer-cancun',
+		nome: 'Folder Cancún - México',
+		data: 'Maio de 2024',
+		descr_breve: 'Folder Institucional – Campanha Maxx Prêmios 2024',
+		descr_compl: 'Desenvolvimento de um folder informativo de 1 dobra (formato A4 fechado) criado especialmente para os participantes da campanha de incentivos Maxx Prêmios, implementada para os colaboradores da empresa TheraSkin. O material apresenta o destino Cancún, local escolhido como premiação para os vencedores da campanha. <br><br> O design foi elaborado para transmitir sofisticação, exclusividade e clima de celebração, reforçando o valor da experiência como recompensa. A linguagem visual combina fotografias de alto impacto e textos inspiradores, destacando as belezas naturais e culturais de Cancún, além da atmosfera de férias e conquista.',
+		tecnologias: [
+			'ill', 'psd'
+		],
+		link_site: '../pdf/Folder_Cancún_2024_1 dobra.pdf',
+		link_git: false,
+		imgs: 2,
+		tipo: 'design-grafico',
+		ativo: true
+	},
+	{
 		cod: 'proj-memo',
 		nome: 'Jogo da Memória',
 		data: 'Setembro de 2024',
@@ -163,7 +178,22 @@ export const meusProjetos = [
 		imgs: 6,
 		tipo: 'logo-design',
 		ativo: false
-	}
+	},
+	{
+		cod: 'flyer-f-nor',
+		nome: 'Flyer Fernando de Noronha',
+		data: 'Setembro de 2025',
+		descr_breve: 'Flyer de Divulgação Turística',
+		descr_compl: 'Criação de um flyer promocional para divulgação turística de Fernando de Noronha, com foco em despertar o interesse do público por meio de uma composição visual leve, vibrante e inspiradora. <br><br> O layout foi desenvolvido para transmitir a essência natural e paradisíaca do destino, destacando suas principais atrações, experiências e paisagens. O uso de tons de azul e verde reforça a conexão com o mar e a natureza, enquanto o título em tipografia robusta cria impacto e atrai a atenção do leitor logo de início.',
+		tecnologias: [
+			'ill', 'psd'
+		],
+		link_site: '../pdf/Flyer_210x297_Fernando de Noronha.pdf',
+		link_git: false,
+		imgs: 1,
+		tipo: 'design-grafico',
+		ativo: true
+	},
 ]
 
 export const minhasHabilidades = [ 
@@ -178,7 +208,7 @@ export const minhasHabilidades = [
 	// { id: 8, cod: 'npm', nome: 'NPM', icone: 'tabler:brand-npm', tipo: 'front', cor: '#CB3837' },
 	{ id: 9, cod: 'psd', nome: 'Photoshop', icone: 'streamline-logos:adobe-photoshop-logo-block', tipo: 'design', cor: '#31A8FF' },
 	{ id: 10, cod: 'ill', nome: 'Illustrator', icone: 'streamline-logos:adobe-illustrator-logo-block', tipo: 'design', cor: '#FF9A00' },
-	{ id: 11, cod: 'pre', nome: 'Premiere', icone: 'streamline-logos:adobe-premiere-pro-logo-block', tipo: 'design', cor: '#9132ebff' },
+	// { id: 11, cod: 'pre', nome: 'Premiere', icone: 'streamline-logos:adobe-premiere-pro-logo-block', tipo: 'design', cor: '#9132ebff' },
 	{ id: 12, cod: 'rea', nome: 'React Native', icone: 'tabler:brand-react-native', tipo: 'mobi', cor: '#61DAFB' },
 	{ id: 13, cod: 'exp', nome: 'Expo e EAS', icone: 'file-icons:expo', tipo: 'mobi', cor: '#ffffff' },
 	// { id: 14, cod: 'uix', nome: 'UI e UX', icone: 'tabler:layout-board', tipo: 'mobi', cor: '#FF4081' },
@@ -190,10 +220,11 @@ export const minhasHabilidades = [
 	{ id: 20, cod: 'ofc', nome: 'Office Avançado', icone: 'tabler:brand-office', tipo: 'outro', cor: '#D83B01' },
 	// { id: 21, cod: 'jsn', nome: 'JSON', icone: 'tabler:json', tipo: 'front', cor: '#000000' },
 	{ id: 22, cod: 'ppt', nome: 'Power Point', icone: 'file-icons:microsoft-powerpoint', tipo: 'design', cor: '#000000' },
-];
+]
 
 export const getHabilidade = (cod: string, dado: string): string | number => {
 	let resposta: string | number = ''
+
 	for (let index = 0; index < minhasHabilidades.length; index++) {
 		const element = minhasHabilidades[index]
 		if (element.cod == cod) {
