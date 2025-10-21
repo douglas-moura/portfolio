@@ -125,7 +125,7 @@
 	}
 	
 	.btn iconify-icon {
-		@apply mr-2 text-xl  
+		@apply mr-2 text-lg  
 	}
 	
 	.btn-primario {
