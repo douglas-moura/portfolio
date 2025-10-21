@@ -115,7 +115,7 @@ export const projetoContainer = (cod: string): HTMLDivElement => {
 				</div>
 				<div class="container h-dvh overflow-y-scroll invisible-scrollbar lg:grid-cols-5 lg:gap-8 lg:overflow-hidden">
 					<span class="flex-col lg:overflow-y-scroll lg:pr-8 lg:col-span-2">
-						<p class="mb-4 text-xs text-cinza-500">${element.descr_compl}</p>
+						<p class="mb-4 text-xs 2xl:text-base text-cinza-500">${element.descr_compl}</p>
 						<h5 class="mt-4 mb-2 text-cinza-800 font-semibold">Tecnologias utilizadas:</h5>
 						<ul class="mb-8">
 							${listaTecs.innerHTML}
@@ -125,7 +125,7 @@ export const projetoContainer = (cod: string): HTMLDivElement => {
 						</span>
 					</span>
 					<div class="lg:h-full lg:overflow-y-scroll lg:col-span-3">
-						<span class="grid gap-2 grid-cols-2 pb-8 lg:pr-4 lg:gap-4 lg:grid-cols-3">
+						<span class="grid gap-2 md:grid-cols-3 pb-8 lg:pr-4 lg:gap-4">
 							${listaImgs.innerHTML}
 						</span>
 					</div>

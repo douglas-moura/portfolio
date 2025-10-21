@@ -39,7 +39,7 @@
 	}
 	
 	h1 {
-		@apply text-white font-bold text-3xl lg:text-5xl
+		@apply text-white font-bold text-3xl lg:text-6xl
 	}
 	
 	h2 {
@@ -63,7 +63,7 @@
 	}
 	
 	p {
-		@apply text-sm
+		@apply text-base
 	}
 	
 	figure {
@@ -72,6 +72,10 @@
 }
 
 @layer components {
+	.info-respo {
+		@apply hidden z-50 text-2xl bg-red-500 fixed
+	}
+
 	.container {
 		@apply grid gap-4 py-8 w-5/6 mx-auto xl:w-10/12 2xl:w-8/12
 	}
@@ -97,11 +101,15 @@
 	}
 	
 	.nav-link-desktop p {
-		@apply z-30 absolute text-cinza-200 my-auto ml-2
+		@apply z-30 absolute text-cinza-200 my-auto ml-2 cursor-pointer text-base xl:text-lg
 	}
 
 	.nav-link-desktop div {
 		@apply z-20 h-10 w-full transition-all duration-150 ease-in-out bg-laranja scale-x-0  origin-left
+	}
+
+	.foto-perfil {
+		@apply  mx-auto w-56 lg:w-72 aspect-square overflow-hidden rounded-full
 	}
 	
 	.titulo-section {
@@ -113,7 +121,7 @@
 	}
 	
 	.btn {
-		@apply transition-all duration-150 px-6 py-3 w-full font-semibold rounded-lg shadow flex items-center text-sm justify-center cursor-pointer hover:scale-105 my-2 lg:my-0 lg:mx-2
+		@apply transition-all duration-150 px-6 py-3 w-full font-semibold rounded-lg shadow flex items-center text-base justify-center cursor-pointer hover:scale-105 my-2 lg:my-0 lg:mx-2
 	}
 	
 	.btn iconify-icon {
@@ -137,7 +145,7 @@
 	}
 	
 	.grid-habilidades {
-		@apply container w-full gap-2 grid-cols-3 lg:grid-cols-2
+		@apply container w-full gap-2 grid-cols-2 md:grid-cols-3 xl:grid-cols-2
 	}
 	
 	.box-habilidade {
@@ -149,7 +157,7 @@
 	}
 	
 	.box-habilidade-text {
-		@apply text-cinza-500 text-xs
+		@apply text-cinza-500 text-sm
 	}
 
 	.filtro-projetos {
@@ -265,7 +273,7 @@
 	* {
 		/* width */
 		::-webkit-scrollbar {
-			width: .5rem;
+			width: .25rem;
 		}
 		
 		/* Track */
