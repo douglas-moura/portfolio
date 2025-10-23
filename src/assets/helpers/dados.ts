@@ -63,7 +63,7 @@ export const meusProjetos = [
 		cod: 'flyer-cancun',
 		nome: 'Folder Cancún - México',
 		data: 'Maio de 2024',
-		descr_breve: 'Folder Institucional – Campanha Maxx Prêmios 2024',
+		descr_breve: 'Folder Institucional',
 		descr_compl: 'Desenvolvimento de um folder informativo de 1 dobra (formato A4 fechado) criado especialmente para os participantes da campanha de incentivos Maxx Prêmios, implementada para os colaboradores da empresa TheraSkin. O material apresenta o destino Cancún, local escolhido como premiação para os vencedores da campanha. <br><br> O design foi elaborado para transmitir sofisticação, exclusividade e clima de celebração, reforçando o valor da experiência como recompensa. A linguagem visual combina fotografias de alto impacto e textos inspiradores, destacando as belezas naturais e culturais de Cancún, além da atmosfera de férias e conquista.',
 		tecnologias: [
 			'ill', 'psd'
@@ -186,7 +186,7 @@ export const meusProjetos = [
 		descr_breve: 'Flyer de Divulgação Turística',
 		descr_compl: 'Criação de um flyer promocional para divulgação turística de Fernando de Noronha, com foco em despertar o interesse do público por meio de uma composição visual leve, vibrante e inspiradora. <br><br> O layout foi desenvolvido para transmitir a essência natural e paradisíaca do destino, destacando suas principais atrações, experiências e paisagens. O uso de tons de azul e verde reforça a conexão com o mar e a natureza, enquanto o título em tipografia robusta cria impacto e atrai a atenção do leitor logo de início.',
 		tecnologias: [
-			'ill', 'psd'
+			'ill',
 		],
 		link_site: '../pdf/Flyer_210x297_Fernando de Noronha.pdf',
 		link_git: false,

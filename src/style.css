@@ -27,7 +27,7 @@
 	}
 
 	nav {
-		@apply container grid-cols-2 items-center py-4 lg:py-0 lg:items-start
+		@apply container grid-cols-2 items-center z-40 py-4 lg:py-0 lg:items-start
 	}
 	
 	section {
@@ -109,7 +109,7 @@
 	}
 
 	.foto-perfil {
-		@apply  mx-auto w-56 lg:w-72 aspect-square overflow-hidden rounded-full
+		@apply mx-auto w-56 lg:w-72 aspect-square relative
 	}
 	
 	.titulo-section {
@@ -181,7 +181,7 @@
 	}
 	
 	.box-projeto {
-		@apply w-full min-h-[300px] bg-white overflow-hidden flex rounded-lg cursor-pointer flex-col justify-between lg:flex-row lg:min-h-[300px]
+		@apply hover:scale-105 transition-all duration-200 ease-in-out w-full min-h-[300px] bg-white overflow-hidden flex rounded-lg cursor-pointer flex-col justify-between lg:flex-row lg:min-h-[300px]
 	}
 
 	.box-projeto-infos {
@@ -201,7 +201,7 @@
 	}
 
 	.box-projeto-img {
-		@apply w-full aspect-video object-cover object-left transition-all duration-150 brightness-[.97] lg:group-hover:translate-x-4 lg:w-1/2
+		@apply opacity-0 group-hover:opacity-100 w-full aspect-video object-cover object-top transition-all duration-150 brightness-[.97] lg:group-hover:translate-x-4 lg:w-1/2
 	}
 		
 	.container-projeto {

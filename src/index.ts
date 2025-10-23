@@ -135,8 +135,6 @@ const captuarImgsGaleria = () => {
 	
 	Array.from(imgsProjetos).forEach((item, index) => {
 		item.addEventListener('click', () => {
-			console.log(item.children[0].getAttribute('src'));
-			
 			//expandirImg(index, imgsProjetos)
 			vizualizardorImagem(item.children[0].getAttribute('src'))
 		})
