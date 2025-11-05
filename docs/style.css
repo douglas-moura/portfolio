@@ -663,7 +663,7 @@ h1{
 @media (min-width: 1024px){
 
   h1{
-    font-size: 3.75rem;
+    font-size: 3rem;
     line-height: 1;
   }
 }
@@ -850,8 +850,8 @@ figure{
 @media (min-width: 1280px){
 
   .nav-link-desktop p{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 .nav-link-desktop div{
@@ -877,7 +877,7 @@ figure{
 @media (min-width: 1024px){
 
   .foto-perfil{
-    width: 18rem;
+    width: 14rem;
   }
 }
 .titulo-section{
@@ -1067,8 +1067,8 @@ figure{
 }
 .box-habilidade-icon{
   margin-bottom: 1rem;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   --tw-text-opacity: 1;
   color: rgb(211 211 211 / var(--tw-text-opacity, 1));
 }
@@ -1076,13 +1076,13 @@ figure{
 
   .box-habilidade-icon{
     margin-bottom: 0.5rem;
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 .box-habilidade-text{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
   --tw-text-opacity: 1;
   color: rgb(135 135 135 / var(--tw-text-opacity, 1));
 }
@@ -1394,8 +1394,8 @@ figure{
 .aspect-square{
   aspect-ratio: 1 / 1;
 }
-.h-8{
-  height: 2rem;
+.h-6{
+  height: 1.5rem;
 }
 .h-dvh{
   height: 100dvh;
@@ -1680,8 +1680,8 @@ figure{
     display: none;
   }
 
-  .lg\:h-12{
-    height: 3rem;
+  .lg\:h-8{
+    height: 2rem;
   }
 
   .lg\:h-full{
@@ -1740,9 +1740,9 @@ figure{
     padding-top: 0px;
   }
 
-  .lg\:text-base{
-    font-size: 1rem;
-    line-height: 1.5rem;
+  .lg\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -1768,8 +1768,8 @@ figure{
     display: flex;
   }
 
-  .\32xl\:text-base{
-    font-size: 1rem;
-    line-height: 1.5rem;
+  .\32xl\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }

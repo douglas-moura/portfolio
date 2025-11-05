@@ -49,7 +49,7 @@ export const boxProjeto = (data: Projeto): HTMLDivElement => {
 
 	const imgProjeto: HTMLImageElement = document.createElement('img')
 	imgProjeto.classList.add('box-projeto-img')
-	imgProjeto.setAttribute('src', `../img/projetos/${data.cod}/0.jpg`)
+	imgProjeto.setAttribute('src', `./assets/img/projetos/${data.cod}/0.jpg`)
 
 	box.appendChild(boxInfoProjeto)
 	box.appendChild(imgProjeto)
@@ -98,7 +98,7 @@ export const projetoContainer = (cod: string): HTMLDivElement => {
 			for (let index = 0; index < element.imgs; index++) {
 				listaImgs.innerHTML +=
 					`<figure class="box-img-galeria-projeto transition duration-150 brightness-90 hover:brightness-100">
-						<img class="img-galeria-projeto" src="../img/projetos/${element.cod}/${index + 1}.jpg" alt="" />
+						<img class="img-galeria-projeto" src="./assets/img/projetos/${element.cod}/${index + 1}.jpg" alt="" />
 					</figure>`
 			}
 			
@@ -110,12 +110,12 @@ export const projetoContainer = (cod: string): HTMLDivElement => {
 						<h6 class="mb-0 text-laranja">${element.data}</h6>
 					</div>
 					<span id="fechar-projeto" class="justify-end">
-						<iconify-icon class="text-4xl cursor-pointer text-laranja" icon="tabler:x"></iconify-icon>
+						<iconify-icon id="btn-fechar-projeto" class="text-4xl cursor-pointer text-laranja" icon="tabler:x"></iconify-icon>
 					</span>
 				</div>
 				<div class="container h-dvh overflow-y-scroll invisible-scrollbar lg:grid-cols-5 lg:gap-8 lg:overflow-hidden">
 					<span class="flex-col lg:overflow-y-scroll lg:pr-8 lg:col-span-2">
-						<p class="mb-4 text-xs 2xl:text-base text-cinza-500">${element.descr_compl}</p>
+						<p class="mb-4 text-xs 2xl:text-sm text-cinza-500">${element.descr_compl}</p>
 						<h5 class="mt-4 mb-2 text-cinza-800 font-semibold">Tecnologias utilizadas:</h5>
 						<ul class="mb-8">
 							${listaTecs.innerHTML}

@@ -122,7 +122,7 @@ const visualizarProjetos = (cod: string): void => {
 	const fecharProjeto = document.getElementById('fechar-projeto') as HTMLSpanElement
 
 	fecharProjeto.addEventListener('click', () => {
-		//alert('fechou')
+		console.log('fechou projeto')
 		container.classList.toggle('translate-y-full')
 		setTimeout(() => {
 			sessaoProjetos.removeChild(container);

@@ -39,7 +39,7 @@
 	}
 	
 	h1 {
-		@apply text-white font-bold text-3xl lg:text-6xl
+		@apply text-white font-bold text-3xl lg:text-5xl
 	}
 	
 	h2 {
@@ -101,7 +101,7 @@
 	}
 	
 	.nav-link-desktop p {
-		@apply z-30 absolute text-cinza-200 my-auto ml-2 cursor-pointer text-base xl:text-lg
+		@apply z-30 absolute text-cinza-200 my-auto ml-2 cursor-pointer text-base xl:text-sm
 	}
 
 	.nav-link-desktop div {
@@ -109,7 +109,7 @@
 	}
 
 	.foto-perfil {
-		@apply mx-auto w-56 lg:w-72 aspect-square relative
+		@apply mx-auto w-56 lg:w-56 aspect-square relative
 	}
 	
 	.titulo-section {
@@ -153,11 +153,11 @@
 	}
 	
 	.box-habilidade-icon {
-		@apply text-4xl text-cinza-200 mb-4 lg:text-4xl lg:mb-2
+		@apply text-3xl text-cinza-200 mb-4 lg:text-3xl lg:mb-2
 	}
 	
 	.box-habilidade-text {
-		@apply text-cinza-500 text-sm
+		@apply text-cinza-500 text-xs
 	}
 
 	.filtro-projetos {
